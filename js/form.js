@@ -1,38 +1,37 @@
 'use strict';
 //global variables :
-var payFrom = document.getElementById('payForm'); //variable to trget the form from html
+var payFromOpen = document.getElementById('payForm'); //variable to trget the form from html
 var paymentArray = [];
 //C.F :
-function Payment(customerID, phoneNum, location, cardNum, expDate, cvCode, couponCode){
+function Payment(customerID, phoneNum, location, paymetnOption, cardNum, expDate, cvCode, couponCode){
   this.customerID = customerID;
+  this.cardNum = cardNum;
   this.phoneNum = phoneNum;
   this.location = location;
+  this.paymetnOption = paymetnOption;
   this.cardNum = cardNum;
   this.expDate = expDate;
   this.cvCode = cvCode;
   this.couponCode = couponCode;
-  setItem();
-  paymentArray.push(this);
 }
 
-//event handler function to handle submit :
-function handleSubmit(event){
+payFromOpen.addEventListener('submit' , function(event){
   event.preventDefault();
-    console.log(paymentArray);
-  //to get the values from the form
-  var customerID = event.target.customerID.value;
-  var phoneNum = event.target.phoneNum.value;
+  var customerID = event.target.CustomerIDModal.value;
+  var phoneNum = event.target.number.value;
   var location = event.target.location.value;
-  var cardNum = event.target.cardNum.value;
-  var expDate = event.target.expDate.value;
-  var cvCode = event.target.cvCode.value;
+  var paymetnOption = event.target.payment.value;
+  var cardNum = event.target.cardNumber.value;
+  var expDate = event.target.cardExpiry.value;
+  var cvCode = event.target.cardCVC.value;
   var couponCode = event.target.couponCode.value;
-
-  //creating the objects
-  new Payment(customerID, phoneNum, location, cardNum, expDate, cvCode, couponCode);
-  //to update the previous payment info with the new payment info
-  payFrom.reset();
-}
+  var pay = new Payment(customerID, phoneNum, location, paymetnOption, cardNum, expDate, cvCode, couponCode);
+  console.log(pay);
+  paymentArray.push(pay);
+  console.log(paymentArray);
+  setItem();
+  payFromOpen.reset();
+});
 
 //update paymentArray
 function setItem(){
@@ -40,12 +39,3 @@ function setItem(){
   localStorage.setItem('customer payment information', payment);
 }
 
-//to get payment info
-function getItem(){
-  var customerPaymentInformation = localStorage.getItem('customer payment information');
-  paymentArray = JSON.parse(customerPaymentInformation);
-}
-
-//add eventListener to the submit button :
-payFrom.addEventListener('submit', handleSubmit);
-getItem();
