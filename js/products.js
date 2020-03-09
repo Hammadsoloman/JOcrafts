@@ -35,16 +35,15 @@ var products = ['Baby blanket.jpg',
 
 var prices = [1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10];
 var productObj =[];//to store the new objects
-var ulE1 = document.getElementById('img-container');
-
+var articlEl = document.querySelector('.product');
+var cartItems=[];
 //CONS. FUNC. FOR PRODUCTS
 function Product (name,price) {
     this.name= name.split(".")[0];
     this.url= `../images/${name}`;
     this.price=price;
     productObj.push(this);
-    this.clicks=0;
-    
+    this.clicks=0;    
   };
 
 for (var i=0 ; i <products.length ; i++){
@@ -53,7 +52,7 @@ for (var i=0 ; i <products.length ; i++){
 
 //SET FUNC.
 function setItem(){
-    var order = JSON.stringify(productObj);
+    var order = JSON.stringify(cartItems);
     localStorage.setItem('imageOrder', order);
   }
 
@@ -61,38 +60,52 @@ function setItem(){
   function getItem(){
         var imageOrder = localStorage.getItem('imageOrder');
         if(imageOrder){
-            productObj = JSON.parse(imageOrder);
+            cartItems = JSON.parse(imageOrder);
         }
       }
   
 
 //FUNCTION TO RENDER THE PRODUCTS
-function renderList(){
-    
-    for (var i =0; i < productObj.length ; i++) {
-      var liE1 = document.createElement('li');
-      ulE1.appendChild(liE1); 
-      var imgEl = document.createElement('img');
-      imgEl.setAttribute('src', productObj[i].url);
-      imgEl.setAttribute('alt', productObj[i].name);
-      imgEl.setAttribute('id', productObj[i].name);
-      liE1.appendChild(imgEl); 
-    }
-  }
-  renderList();
+function renderlist(){
+    for (var i = 0; i < productObj.length; i++) {
+        var divEl = document.createElement('div');
+        articlEl.appendChild(divEl); 
+        divEl.setAttribute('class', 'img-container');  
+        var ImageEl = document.createElement('img'); 
+        divEl.appendChild(ImageEl);       
+        ImageEl.setAttribute('src', productObj[i].url);
+        ImageEl.setAttribute('alt', productObj[i].name);  
+        ImageEl.setAttribute('id', productObj[i].name);  
+        ImageEl.setAttribute('class', 'product-img');  
+        var buttonEl = document.createElement('button'); 
+        divEl.appendChild(buttonEl);
+        buttonEl.setAttribute('class', 'bag-btn'); 
+        buttonEl.setAttribute('data-id', '1');  
+        buttonEl.setAttribute('id', i);  
+        var iEl=document.createElement('i');
+        buttonEl.appendChild(iEl);
+        iEl.setAttribute('class','fas fa-cart-plus');
+        var pEl=document.createElement('p');
+        buttonEl.appendChild(pEl);
+        pEl.textContent= "ADD TO CART"
+}
+};
+  renderlist();
 //EVENT LISTENER FOR SELECTING PRODUCTS
-ulE1.addEventListener('click', clickImage);
+articlEl.addEventListener('click', clickImage);
 
 //EVENT LISTENER FUNCTION 1
 function clickImage(e){
+    console
     for (var i = 0; i < productObj.length ; i++) {  
         if (e.target.id === productObj[i].name) {
             productObj[i].clicks++; 
-        }
-        
-        console.log(productObj[i].name,productObj[i].clicks);
+            if( productObj[i].clicks === 1){
+                cartItems.push(productObj[i]);
+            } 
+            setItem();
+        }    
 }
-setItem();
 }
 
 //EVENT LISTENER FOR CART
