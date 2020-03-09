@@ -122,17 +122,6 @@ h1 {
 
 }
 
-/* 
-@keyframes move-down{
-    0%{
-        top: -300px;
-        opacity: 0;
-    }
-    100%{
-        top: 0;
-        opacity: 1;
-    }
-} */
 h2{
     color: tomato;
     opacity: 1;
