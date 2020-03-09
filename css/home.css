@@ -7,26 +7,28 @@
 }
 
 
-/* .loader{
-    background: #000735;
+#loader{
+    background:wheat;
     width: 100%;
     height: 100vh;
     position: fixed;
     top: 0;
     z-index: 9999;
-    animation: remove-loader 5s ease alternate forwards;
+    animation: removeloader 2s ease alternate forwards;
 }
 
 
-@keyframes remove-loader{
+@keyframes removeloader{
     0%{
         opacity: 1;
+        /* display: none; */
     }
     100%{
         opacity: 0;
         display: none;
-    }
-} */
+        z-index: 0;
+         }
+}  
 
 header{
     position: sticky;
