@@ -64,15 +64,17 @@ function renderlist(){
         ImageEl.setAttribute('id', productObj[i].name);  
         ImageEl.setAttribute('class', 'product-img');  
         var buttonEl = document.createElement('button'); 
-        divEl.appendChild(buttonEl);
         buttonEl.setAttribute('class', 'bag-btn'); 
         buttonEl.setAttribute('data-id', '1');  
-        buttonEl.setAttribute('id', i);  
+        buttonEl.setAttribute('id',String(i));  
+        divEl.appendChild(buttonEl);
         var iEl=document.createElement('i');
         buttonEl.appendChild(iEl);
         iEl.setAttribute('class','fas fa-cart-plus');
+        iEl.setAttribute("id",String(i))
         var pEl=document.createElement('p');
         buttonEl.appendChild(pEl);
+        pEl.setAttribute("id",String(i))
         pEl.textContent= "ADD TO CART"
         
 }}
@@ -85,8 +87,12 @@ numItem.appendChild(pel)
 pel.textContent=cart.length
  var eventos= document.querySelector('.product')
  eventos.addEventListener('click',function(){
-    if (Number(event.target.id) < productObj.length){       
-        cart.push(productObj[Number(event.target.id)])
+    if (Number(event.target.id) < productObj.length ){ 
+        if(cart.includes(productObj[Number(event.target.id)]) === false) {
+            cart.push(productObj[Number(event.target.id)])
+        }
+        console.log(Number(event.target.id))
+        console.log(event.target)
         productObj[Number(event.target.id)].click++
         setItem()
         pel.textContent=cart.length
