@@ -12,14 +12,14 @@ var productImage5 = document.querySelector('#img5');
 
 
 function Product (name,price) {
-    this.name= name.split(".")[0];
-    this.url= `../images/${name}`;
-    this.price=price;
-    productObj.push(this);
-  };
+  this.name= name.split(".")[0];
+  this.url= `../images/${name}`;
+  this.price=price;
+  productObj.push(this);
+}
 
 for (var i=0 ; i <products.length ; i++){
-    new Product(products[i],prices[i]);
+  new Product(products[i],prices[i]);
 }
 console.log(productObj);
 

@@ -11,83 +11,71 @@
 
 <body>
     <div>
-        <form id="payForm">
-            <legend>Buyer Data</legend>
-            <label for="CustomerIDModal">Customer ID</label>
-            <input class="form-control" id="CustomerIDModal" name=" " type="number" min="0"
-                placeholder="Inter Customer ID" require>
-            <label for="number">Phone number</label>
-            <input type="text" id="number" placeholder="Enter Phone number" required>
-            <label for="location">location</label>
-            <input type="text" id="location" placeholder="Enter your location" required>
-            <!-- <label for="Payment">Payment Options</label>
-            <input type="text" id="Payment" placeholder="Enter your Payment method" required> -->
-            <div class="container">
-                <div class="row">
-                    <!-- You can make it whatever width you want. I'm making it full width
-                on <= small devices and 4/12 page width on >= medium devices -->
-                    <div class="col-xs-12 col-md-4">
-                        <!-- CREDIT CARD FORM STARTS HERE -->
-                        <div class="panel panel-default credit-card-box">
-                            <div class="panel-heading display-table">
-                                <div class="row display-tr">
-                                    <h3 class="panel-title display-td">Payment Details</h3>
-                                    <div class="display-td">
-                                        <img class="img-responsive pull-right"
-                                            src="http://i76.imgup.net/accepted_c22e0.png">
-                                    </div>
+    <form id="payForm">
+        <fieldset>
+          <legend>Customer Payment Data :</legend>
+          <ul class="List">
+            <li>
+              <label for="CustomerIDModal">Customer ID</label>
+              <input required type="number" id="CustomerIDModal" min="0"
+              placeholder="Enter Customer ID" required>
+            </li>
+            <li>
+                <label for="number">Phone number</label>
+                <input required type="number" id="number" placeholder="Enter Phone number">
+            </li>
+            <li>
+                <label for="location">location</label>
+                <input required type="text" id="location" placeholder="Enter your location">
+            </li>
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <div class="panel panel-default credit-card-box">
+                        <div class="panel-heading display-table">
+                            <div class="row display-tr">
+                                <h3 class="panel-title display-td">Payment Details</h3>
+                                <div class="display-td">
+                                    <img class="img-responsive pull-right"
+                                        src="http://i76.imgup.net/accepted_c22e0.png">
                                 </div>
                             </div>
-                            <div class="panel-body">
-                                <form role="form" id="payment-form">
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <div class="form-group">
-                                                <label for="cardNumber">CARD NUMBER</label>
-                                                <div class="input-group">
-                                                    <input type="tel" class="form-control" name="cardNumber"
-                                                        placeholder="Valid Card Number" autocomplete="cc-number"
-                                                        required autofocus />
-                                                    <span class="input-group-addon"><i
-                                                            class="fa fa-credit-card"></i></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-7 col-md-7">
-                                            <div class="form-group">
-                                                <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span
-                                                        class="visible-xs-inline">EXP</span> DATE</label>
-                                                <input type="tel" class="form-control" name="cardExpiry"
-                                                    placeholder="MM / YY" autocomplete="cc-exp" required />
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-5 col-md-5 pull-right">
-                                            <div class="form-group">
-                                                <label for="cardCVC">CV CODE</label>
-                                                <input type="tel" class="form-control" name="cardCVC" placeholder="CVC"
-                                                    autocomplete="cc-csc" required />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <div class="form-group">
-                                                <label for="couponCode">COUPON CODE</label>
-                                                <input type="text" class="form-control" name="couponCode" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
                         </div>
-                        <!-- CREDIT CARD FORM ENDS HERE -->
-                    </div>
-                </div>
-            </div>
-            <input type="submit">
-        </form>
+                    <li>
+                        <label for="Payment">Payment Options</label>
+                        <select name = "payment">
+                        <option value="visa">VISA</option>
+                        <option value="Master Card">Master Card</option>
+                        <option value="DISCOVER">DISCOVER</option>
+                        <option value="AMERICAN EXPRESS">AMERICAN EXPRESS</option>
+                        </select> 
+                    </li>
+                    <li>    
+                        <label required for="cardNumber">CARD NUMBER</label>
+                        <input required type="number" id="cardNumber" placeholder="Valid Card Number" autocomplete="cc-number"
+                        required autofocus>
+                    </li>
+                    <li>
+                        <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span
+                            class="visible-xs-inline">EXP</span> DATE</label>
+                        <input type="tel" id="cardExpiry" class="form-control" name="cardExpiry"
+                        placeholder="MM / YY" autocomplete="cc-exp" required />
+                    </li>
+                    <li>
+                        <label for="cardCVC">CV CODE</label>
+                        <input type="tel" id="cardCVC" class="form-control" name="cardCVC" placeholder="CVC"
+                        autocomplete="cc-csc" required />
+                    </li>
+                    <li>
+                        <label for="couponCode">COUPON CODE</label>
+                        <input type="text" id="couponCode" class="form-control" name="couponCode"/>
+                    </li>
+                    <li>
+                        <input id="submitButton" type="submit">
+                        <button><a href = "cart.html">Close</a>l</button>
+                    </li> 
+            </ul>
+      </fieldset>
+      </form>
     </div>
 <script src="/js/form.js"></script>
 </body>

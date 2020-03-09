@@ -28,7 +28,7 @@ nav{
     border-radius: 30%;
 }
 header {
-    background: url("/img/Annotation.png") center/cover no-repeat;
+    background: url("/images/Annotation.png") center/cover no-repeat;
     height: 400px;
   }
   .banner {
@@ -74,7 +74,7 @@ header {
     position: relative;
     overflow: hidden;
   }
-  .bag-btn {
+  .cart-btn {
     position: absolute;
     top: 70%;
     right: 0;
@@ -86,13 +86,13 @@ header {
     transform: translateX(101%);
     cursor: pointer;
   }
-  .bag-btn:hover {
+  .cart-btn:hover {
     color: #fff;
   }
   /* .fa-shopping-cart {
     margin-right: 0.5rem;
   } */
-  .img-container:hover .bag-btn {
+  .img-container:hover .cart-btn {
     transform: translateX(0);
   }
   .product-img {
@@ -121,4 +121,5 @@ header {
     color: var(--primaryColor);
     text-align: center;
   }
+  
   
