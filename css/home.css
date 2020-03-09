@@ -48,7 +48,11 @@ header img {
 }
 
 body{
+<<<<<<< HEAD
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.2)) ,url("../images/backgound.png") ;
+=======
     background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.2)) ,url("../images//backgound.png") ;
+>>>>>>> c3b8a07505f096c67c0d04113085bceb9ef07365
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
