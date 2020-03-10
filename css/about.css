@@ -218,6 +218,7 @@ main article {
     display: inline-grid;
     height: 382px;
     width: 200px;
+<
     border: solid 3px rgb(15, 16, 19);
     border-radius: 15px;
     padding: 7px;
@@ -227,6 +228,8 @@ main article {
     background-color: rgba(8, 6, 8, 0.75);   
     color: #fff; 
     animation: bounceInUp 3s ease alternate forwards;
+
+    
 }
 main article ul{
     list-style: circle;
@@ -245,6 +248,7 @@ main article ul{
 p{
     font-size: 20px;
     text-align: center;
+
     font-family: 'Special Elite', cursive;
 
 }
@@ -431,13 +435,3 @@ p.rights-text {
   }
   
 /*---------------------End animation---------------*/
-
-
-
-
-
-
-
-
-
-
