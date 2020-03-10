@@ -32,7 +32,6 @@ header{
     z-index: 2;
     padding-right: 2%;
     box-shadow: 0px 2px 25px rgba(0, 0, 0, 1);
-
     }
 header img {
     width: 180px;
@@ -40,16 +39,13 @@ header img {
 }
 .logo{
     float: left;
-
 }
-
 nav{
     float: right;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.1);
     width: 100%; 
 }
-
 nav ul{
     width: auto;
     overflow: auto;
@@ -60,29 +56,21 @@ nav ul{
     position: absolute;
     bottom: 32px;
 }
-
 nav ul li{
     display: inline-block;
     list-style: none;
     padding: 5px 15px;
     border-radius: 0.3em;
-
 }
-
 nav ul li:hover{
     border: 1px solid rgb(173, 77, 45);
     background-color: rgb(227, 137, 107);
     transition: 0.5s;
-
-
 }
-
 nav ul .active{
     border: 1px solid #fff;
     background-color: rgb(236, 187, 95);
-
 }
-
 nav ul li a {
     text-decoration: none;
     color:#fff ;
@@ -130,7 +118,6 @@ h1{
     margin: 0 auto;
     position: relative;
 }
-
 .slides * {
     user-select: none;
     -ms-user-select: none;
@@ -139,11 +126,8 @@ h1{
     -webkit-user-select: none;
     -webkit-touch-callout: none;
 }
-
 .slides input { display: none; }
-
 .slide-container { display: block; }
-
 .slide {
     top: 0;
     opacity: 0;
@@ -151,29 +135,22 @@ h1{
     height: 400px;
     display: block;
     position: absolute;
-
     transform: scale(0);
-
     transition: all .7s ease-in-out;
 }
-
 .slide img {
     width: 100%;
     height: 100%;
 }
-
 .nav label {
     width: 200px;
     height: 100%;
     display: none;
     position: absolute;
-
 	  opacity: 0;
     z-index: 1;
     cursor: pointer;
-
     transition: opacity .2s;
-
     color: #FFF;
     font-size: 156pt;
     text-align: center;
@@ -182,25 +159,16 @@ h1{
     background-color: rgba(255, 255, 255, .3);
     text-shadow: 0px 0px 15px rgb(119, 119, 119);
 }
-
 .slide:hover + .nav label { opacity: 0.5; }
-
 .nav label:hover { opacity: 1; }
-
 .nav .next { right: 0; }
-
 input:checked + .slide-container  .slide {
     opacity: 1;
-
     transform: scale(1);
-
     transition: opacity 1s ease-in-out;
     box-shadow: 0px 2px 25px rgba(0, 0, 0, 1);
-
 }
-
 input:checked + .slide-container .nav label { display: block; }
-
 .nav-dots {
 	width: 100%;
 	bottom: 9px;
@@ -209,7 +177,6 @@ input:checked + .slide-container .nav label { display: block; }
 	position: absolute;
 	text-align: center;
 }
-
 .nav-dots .nav-dot {
 	top: -5px;
 	width: 11px;
@@ -220,12 +187,10 @@ input:checked + .slide-container .nav label { display: block; }
 	display: inline-block;
 	background-color: rgba(0, 0, 0, 0.6);
 }
-
 .nav-dots .nav-dot:hover {
 	cursor: pointer;
 	background-color: rgba(0, 0, 0, 0.8);
 }
-
 input#img-1:checked ~ .nav-dots label#img-dot-1,
 input#img-2:checked ~ .nav-dots label#img-dot-2,
 input#img-3:checked ~ .nav-dots label#img-dot-3,
@@ -307,7 +272,6 @@ div#img-container {
 .div2_img:hover{
     transform: scale(1.1);
     cursor: pointer;
-
 }
 /*footer css*/
 footer{

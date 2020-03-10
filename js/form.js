@@ -2,6 +2,9 @@
 //global variables :
 var payFromOpen = document.getElementById('payForm'); //variable to trget the form from html
 var paymentArray = [];
+var totalInCart = 0;
+getitem()
+
 //C.F :
 function Payment(customerID, phoneNum, location, paymetnOption, cardNum, expDate, cvCode, couponCode,email){
   this.customerID = customerID;
@@ -36,9 +39,19 @@ payFromOpen.addEventListener('submit' , function(event){
   payFromOpen.reset();
 });
 
+var price = document.getElementById('totalprice');
+price.innerHTML=`Total Price: ${totalInCart}`;
+
 //update paymentArray
 function setItem(){
   var payment = JSON.stringify(paymentArray);
   localStorage.setItem('customer payment information', payment);
 }
 
+function getitem(){
+  var total = localStorage.getItem('total')
+  console.log(totalInCart, total)
+  if (total!= null){
+    totalInCart= (total)
+  }
+}
