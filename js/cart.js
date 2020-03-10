@@ -43,6 +43,7 @@ function renderlist(){
     for (var i = 0; i < cart.length; i++) {
         var liel = document.createElement('li')
         ulel.appendChild(liel)
+        liel.setAttribute('class', 'img-containerLi');  
         var divEl = document.createElement('div');
         liel.appendChild(divEl); 
         divEl.setAttribute('class', 'img-container');  
