@@ -9,7 +9,7 @@
 }
 
 body{
-    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url("/images/wallpaper.jpg") ;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url("/images/traditional.jpg") ;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -279,12 +279,15 @@ main img {
     padding-left: 10px;
 }
 
+article:hover{
 
+}
 article:nth-child(1):hover{
     background-image: url(/images/abdallah.png);
-    background-position : center;  
-    ;
+    background-position : center; 
+     ;
 }
+
 article:nth-child(1) ul:hover{
     z-index: -10;
 }
@@ -325,15 +328,20 @@ article:nth-child(5) ul:hover{
     z-index: -10;
 }
 .anchor :hover{
-    transform:scale(1.1);
+   color: transparent;
+    /* transform:scale(1.1); */
     /* background-color:#1af107; */
     box-shadow: 2px 2px 12px rgba(47,47,47,0.40);
     transition: all ease 0.8s;
-   }
+}
+
 .rights-text{
-font-family: 'Times New Roman', Times, serif;}
+font-family: 'Times New Roman', Times, serif;
+}
+
 p.rights-text {
     margin-right: 170px;
+
 }
 
 
