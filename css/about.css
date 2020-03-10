@@ -15,6 +15,7 @@ body{
     background-repeat: no-repeat;
     height: 200vh;
 } 
+/*------------------------Header-----------------*/
 header{
     position: sticky;
     top: 0;
@@ -76,6 +77,8 @@ nav ul li a {
     color:rgb(8, 8, 8) ;
     font-size: 18px;
 }
+
+/*------------------------End Header-----------------*/
 
 
 
@@ -201,11 +204,12 @@ footer{
   }
 
   main h3{
-    /* margin-left: 10px; */
     font-size: 25px;
 }
 /*----------------------------End Footer---------------*/  
 
+
+/*-------------------------the main-----------*/
 main{
     height: 150vh;
 }
@@ -279,9 +283,7 @@ main img {
     padding-left: 10px;
 }
 
-article:hover{
 
-}
 article:nth-child(1):hover{
     background-image: url(/images/abdallah.png);
     background-position : center; 
@@ -329,8 +331,6 @@ article:nth-child(5) ul:hover{
 }
 .anchor :hover{
    color: transparent;
-    /* transform:scale(1.1); */
-    /* background-color:#1af107; */
     box-shadow: 2px 2px 12px rgba(47,47,47,0.40);
     transition: all ease 0.8s;
 }
@@ -347,6 +347,7 @@ p.rights-text {
     width: 170px;
     height: 100px;
 }
+/*-------------------------End the main-----------*/
 
 
 /*******animation**********/
@@ -429,6 +430,7 @@ p.rights-text {
     }
   }
   
+/*---------------------End animation---------------*/
 
 
 
