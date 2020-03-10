@@ -29,8 +29,8 @@ header{
 
     }
 header img {
-    width: 190px;
-    height: 40px; 
+    width: 180px;
+    height: 90px; 
 }
 
 .logo{
@@ -83,8 +83,8 @@ nav ul li a {
 
 footer{
     background: #f1f1f1;
-    padding: 90px 0;
-   
+    padding: 30px 0;
+    /* position: relative; */
   }
   
   .footer-container{
@@ -198,10 +198,15 @@ footer{
       margin-top: 20px;
       }
   }
+
+  main h3{
+    margin-left: 60px;
+    font-size: 25px;
+}
 /*----------------------------End Footer---------------*/  
 
 main{
-    height: 200vh;
+    height: 150vh;
 }
 
 main article {
@@ -216,6 +221,7 @@ main article {
     background-repeat: no-repeat;
     background-color: rgba(8, 6, 8, 0.75);   
     color: #fff; 
+    animation: bounceInUp 2s ease alternate forwards;
 }
 main article ul{
     list-style: circle;
@@ -250,6 +256,7 @@ main h1 {
     font-family: cursive;
     -webkit-text-stroke: white 2px;
     margin: 69px 0px;
+    animation: bounceInDown 2s ease alternate forwards;
   
     
 }
@@ -264,10 +271,12 @@ main div {
 }
 main img {
     opacity: 1;
-    width: 100px;
-    height: 150px;
-    padding-left: 20px;
+    width: 120px;
+    height: 100px;
+    padding-left: 10px;
 }
+
+
 article:nth-child(1):hover{
     background-image: url(/images/abdallah.png);
     
@@ -314,6 +323,86 @@ article:nth-child(5) ul:hover{
 font-family: 'Times New Roman', Times, serif;}
 
 
+/*******animation**********/
+
+
+@-webkit-keyframes bounceInDown {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -3000px, 0);
+      transform: translate3d(0, -3000px, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 25px, 0);
+      transform: translate3d(0, 25px, 0);
+    }
+  
+    75% {
+      -webkit-transform: translate3d(0, -10px, 0);
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(0, 5px, 0);
+      transform: translate3d(0, 5px, 0);
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  
+@-webkit-keyframes bounceInUp {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 3000px, 0);
+      transform: translate3d(0, 3000px, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, -20px, 0);
+      transform: translate3d(0, -20px, 0);
+    }
+  
+    75% {
+      -webkit-transform: translate3d(0, 10px, 0);
+      transform: translate3d(0, 10px, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(0, -5px, 0);
+      transform: translate3d(0, -5px, 0);
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
 
 
 
