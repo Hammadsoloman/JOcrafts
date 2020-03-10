@@ -10,7 +10,7 @@
 }
 
 body{
-    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url("/images/traditional.jpg") ;
+    /* background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url("/images/traditional.jpg") ; */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,6 +29,7 @@ header{
     padding-right: 2%;
     padding-left: 2%;
     box-shadow: 0px 2px 25px rgba(0, 0, 0, 1);
+
 
     }
 header img {
@@ -210,7 +211,7 @@ footer{
 /*----------------------------End Footer---------------*/  
 
 
-/*-------------------------the main-----------*/
+/*-------------------------the main-------------------*/
 main{
     height: 150vh;
 }
@@ -219,14 +220,13 @@ main article {
     display: inline-grid;
     height: 382px;
     width: 200px;
-<
     border: solid 3px rgb(15, 16, 19);
     border-radius: 15px;
     padding: 7px;
     margin: 5px -2% 4px 4% ;   
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgba(8, 6, 8, 0.75);   
+    background-color: #000;   
     color: #fff; 
     animation: bounceInUp 3s ease alternate forwards;
 
@@ -251,8 +251,8 @@ p{
     text-align: center;
 
     font-family: 'Special Elite', cursive;
-
 }
+
 
 main h2 {
     text-align: center;
@@ -268,10 +268,14 @@ main h1 {
     -webkit-text-stroke: white 2px;
     margin: 69px 0px;
     animation: bounceInDown 3s ease alternate forwards;
-    color: rgb(226, 217, 217);
+    color: rgb(7, 2, 2);
+    /* background-image: url(/images/about-back.jpg); */
+    
   
     
 }
+
+
 main div {
     position: relative;
     right: auto;
@@ -289,55 +293,76 @@ main img {
 }
 
 
-article:nth-child(1):hover{
+article:nth-child(1){
     background-image: url(/images/abdallah.png);
-    background-position : center; 
-     ;
+    background-position : center;
+    color: transparent;
 }
 
-article:nth-child(1) ul:hover{
-    z-index: -10;
+article:nth-child(1):hover{
+  background-image: none;
+  color: white;
+  transition: all ease 5s;
+  /* animation: slides 5s ease-in-out forwards; */
 }
+article:nth-child(2){
+  background-image: url(/images/marah.png);
+  background-position : center;
+  color: transparent;
+}
+
 article:nth-child(2):hover{
-    background-image: url(/images/marah.png);
-    background-position : center;
+background-image: none;
+color: white;
+transition: all ease 5s;
+/* animation: slides 5s ease-in-out forwards; */
+}
 
-    ;
+article:nth-child(3){
+  background-image: url(/images/hammad.png);
+  background-position : center;
+  color: transparent;
 }
-article:nth-child(2) ul:hover{
-    z-index: -10;
-}
+
 article:nth-child(3):hover{
-    background-image: url(/images/hammad.png);
-    background-position : center;
+background-image: none;
+color: white;
+transition: all ease 5s;
+/* animation: slides 5s ease-in-out forwards; */
+}
 
-    ;
+article:nth-child(4){
+  background-image: url(/images/bushra.png);
+  background-position : center;
+  color: transparent;
 }
-article:nth-child(3) ul:hover{
-    z-index: -10;
-}
+
 article:nth-child(4):hover{
-    background-image: url(/images/bushra.png);
-    background-position : center;
+background-image: none;
+color: white;
+transition: all ease 5s;
+/* animation: slides 5s ease-in-out forwards; */
+}
 
-    ;
+article:nth-child(5){
+  background-image: url(/images/reham.png);
+  background-position : center;
+  color: transparent;
 }
-article:nth-child(4) ul:hover{
-    z-index: -10;
-}
+
 article:nth-child(5):hover{
-    background-image: url(/images/reham.png);
-    background-position : center;
+background-image: none;
+color: white;
+transition: all ease 5s;
+/* animation: slides 5s ease-in-out forwards; */
+}
 
-    ;
-}
-article:nth-child(5) ul:hover{
-    z-index: -10;
-}
+
+
 .anchor :hover{
-   color: transparent;
-    box-shadow: 2px 2px 12px rgba(47,47,47,0.40);
-    transition: all ease 0.8s;
+  background-image: none;
+  box-shadow: 2px 2px 12px rgba(12, 8, 8, 0.4);
+  /* transition: all ease 0.8s; */
 }
 
 .rights-text{
@@ -356,7 +381,14 @@ p.rights-text {
 
 
 /*******animation**********/
+@keyframes slides{
+0%{
 
+}
+100%{
+
+}
+}
 
 @-webkit-keyframes bounceInDown {
     from,
@@ -370,28 +402,28 @@ p.rights-text {
   
     0% {
       opacity: 0;
-      -webkit-transform: translate3d(0, -3000px, 0);
+      /* -webkit-transform: translate3d(0, -3000px, 0); */
       transform: translate3d(0, -3000px, 0);
     }
   
     60% {
       opacity: 1;
-      -webkit-transform: translate3d(0, 25px, 0);
+      /* -webkit-transform: translate3d(0, 25px, 0); */
       transform: translate3d(0, 25px, 0);
     }
   
     75% {
-      -webkit-transform: translate3d(0, -10px, 0);
+      /* -webkit-transform: translate3d(0, -10px, 0); */
       transform: translate3d(0, -10px, 0);
     }
   
     90% {
-      -webkit-transform: translate3d(0, 5px, 0);
+      /* -webkit-transform: translate3d(0, 5px, 0); */
       transform: translate3d(0, 5px, 0);
     }
   
     to {
-      -webkit-transform: translate3d(0, 0, 0);
+      /* -webkit-transform: translate3d(0, 0, 0); */
       transform: translate3d(0, 0, 0);
     }
   }
@@ -403,34 +435,34 @@ p.rights-text {
     75%,
     90%,
     to {
-      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      /* -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); */
       animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     }
   
     from {
       opacity: 0;
-      -webkit-transform: translate3d(0, 3000px, 0);
+      /* -webkit-transform: translate3d(0, 3000px, 0); */
       transform: translate3d(0, 3000px, 0);
     }
   
     60% {
       opacity: 1;
-      -webkit-transform: translate3d(0, -20px, 0);
+      /* -webkit-transform: translate3d(0, -20px, 0); */
       transform: translate3d(0, -20px, 0);
     }
   
     75% {
-      -webkit-transform: translate3d(0, 10px, 0);
+      /* -webkit-transform: translate3d(0, 10px, 0); */
       transform: translate3d(0, 10px, 0);
     }
   
     90% {
-      -webkit-transform: translate3d(0, -5px, 0);
+      /* -webkit-transform: translate3d(0, -5px, 0); */
       transform: translate3d(0, -5px, 0);
     }
   
     to {
-      -webkit-transform: translate3d(0, 0, 0);
+      /* -webkit-transform: translate3d(0, 0, 0);s */
       transform: translate3d(0, 0, 0);
     }
   }
