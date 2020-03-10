@@ -1,6 +1,16 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.5.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;}
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url('https://fonts.googleapis.com/css?family=Kreon|ZCOOL+XiaoWei&display=swap');
+
 header {
   position: sticky;
   top: 0;
+  height: 112px;
   width: auto;
   overflow: auto;
   border-bottom: 2px solid;
@@ -11,7 +21,6 @@ header {
   padding-left: 2%;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, .8);
 }
-
 header img {
   width: 195px;
     height: 95px;
@@ -52,25 +61,8 @@ nav ul li:hover{
 
 }
 
-.shoppingCart{
-  font-size: 40px; 
-  color: rgb(54, 54, 54);
-}
-
 .product{ /*article element for rendering all images*/
-  /* -webkit-animation: blurFadeInOut 15s ease-in backwards; */
-	/* -moz-animation: blurFadeInOut 15s ease-in backwards; */
-	/* -ms-animation: blurFadeInOut 15s ease-in forwards; */
-	/* animation: blurFadeInOut 15s ease-in forwards; */
-    /* -webkit-animation-delay: 0s;
-    -moz-animation-delay: 0s;
-    -ms-animation-delay: 0s;
-    animation-delay: 0s; */
 }
-
-
-
-
 
 nav ul li a {
   text-decoration: none;
@@ -95,46 +87,26 @@ nav ul li a {
   line-height: 26px;
   text-transform: uppercase;
   -webkit-text-stroke-width: thin;
-
 }
-/* img#img1 {
-  width: 295px;
-} */
 
 body{
   /* background-color: rgb(66, 66, 66); */
 }
+   
+.cart-num {/*the parent div of the fixed cart and the counter*/
+  position: fixed;
+  cursor: pointer;
+  padding: 18px 7px;
+  float: right;
+  clear: right;
+  z-index: 999;
+  margin: 10px;
+  background: rgba(129, 129, 129, 0.63);
+  border-radius: 25px
 
-
-
-
-
-
-
-@font-face {
-    font-family: 'FontAwesome';
-    src: url('../fonts/fontawesome-webfont.eot?v=4.5.0');
-    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  @import url(https://fonts.googleapis.com/css?family=Varela+Round);
-  @import url('https://fonts.googleapis.com/css?family=Kreon|ZCOOL+XiaoWei&display=swap');
-  /* nav{
-    background-color: rgba(255, 228, 196, 0.5);
-    height: 55px;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-} */
-.cart-num {
-    position: relative;
-    cursor: pointer;
-    padding-top: 15px;
 }
-.cartItems {
-    position: absolute;
+.cartCounter{/*the counter of the cart icon*/
+  position: absolute;
     top: 5px;
     left: 20px;
     color: rgb(236, 214, 214);
@@ -143,6 +115,8 @@ body{
     padding: 0 5px;
     border-radius: 30%;
 }
+
+
   /* .banner {
     text-align: center;
     background: rgba(255, 255, 255, 0.8);
@@ -173,18 +147,43 @@ body{
   /* .products {
     padding: 100px 0;
   } */
-  .section-title h2 {
+  .section-title {
     text-align: center;
-    font-size: 45px;
-    padding: 150px 0 50px 0;
-    background-image: url("../images/Jo (6).png");
-    height: 150px;
-    margin: 30px 10px;
+    padding: 20px 0 0 0;
+}
+.h2img{
+  -webkit-animation: blurFadeInOut 10s ease-in forwards;
+    -moz-animation: blurFadeInOut 10s ease-in forwards;
+    -ms-animation: blurFadeInOut 10s ease-in forwards;
+    animation: blurFadeInOut 10s ease-in forwards;
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    animation-delay: 0s;
+}
+  /* .section-title h2 {
+    text-align: center;
+    font-size: 29px;
+    padding: 136px 0 0px 0;
+    background-image: url(/images/Jo\ \(6\).png);
+    height: 179px;
+    background-size: contain;
+    margin: 0px;
     background-position: center;
     background-repeat: no-repeat;
     font-family: Varela+Round;
     letter-spacing: 4px;
     color: rgba(0, 0, 0, .8);
+    -webkit-animation: blurFadeInOut 10s ease-in forwards;
+    -moz-animation: blurFadeInOut 10s ease-in forwards;
+    -ms-animation: blurFadeInOut 10s ease-in forwards;
+    animation: blurFadeInOut 10s ease-in forwards;
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    animation-delay: 0s;
+  }
+   */
 
     /* position: absolute; */
 	/* top: 50%; */
@@ -204,30 +203,27 @@ body{
     -moz-animation-delay: 0s;
     -ms-animation-delay: 0s;
     animation-delay: 0s; */
-  }
   
 
-
-  .product-center {
+  .product-center {/*the parent div of the article*/
     margin: 0 auto;
   }
-  .img-container {
+
+  .img-container {/*div for each image*/
     position: relative;
     overflow: hidden;
     display: inline-block;
-    margin: 70px;
-    animation: blurFadeInOut 15s ease-in forwards;
-    -ms-animation: blurFadeInOut 15s ease-in forwards;
-
+    margin: 36px 74px 76px 82px;
+    animation: blurFadeInOut 10s ease-in forwards;
   }
-  p.prod-name {
+  p.prod-name {/*the p of each img*/
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     width: 142px;
     margin: 0 auto;
 }
-  .bag-btn {
+  .bag-btn {/*the add to cart btn*/
     position: absolute;
     top: 55%;
     right: 0;
@@ -244,14 +240,17 @@ body{
   .bag-btn:hover {
     color: #fff;
   }
-  .fa-shopping-cart ,.cartItems {
-    /* margin-right: 0.5rem; */
-    /* float:right; */
+  
+  .shoppingCart {/*the cart icon*/
+    margin-right: 0.5rem;
+    float:right;
   }
+
   .img-container:hover .bag-btn {
     transform: translateX(0);
   }
-  .product-img {
+
+  .product-img {/*images*/
     display: inline-block;
     width: 250px;
     height: 250px;
@@ -261,12 +260,13 @@ body{
     opacity: 0.5;
     
   }
-  .productInfo {
+
+  /* .productInfo {
     background-color: rgba(255, 228, 196, 0.5);
     padding-top: 1px;
     padding-bottom: 15px;
-  }
-.product h3 {
+  } */
+/* .product h3 {
     text-transform: capitalize;
     font-size: 20px;
     margin-top: 18px;
@@ -278,7 +278,7 @@ body{
     letter-spacing: var(--mainSpacing);
     color: var(--primaryColor);
     text-align: center;
-  }
+  } */
 
 
   
