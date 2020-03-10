@@ -246,10 +246,10 @@ section pre {
   font-size: 45px;
   margin-bottom: 100px;
 }
-.product-center {
+/* .product-center {
   width: 200px;
   margin: 0 auto;
-}
+} */
 .img-container {
   position: relative;
   overflow: hidden;
@@ -276,9 +276,14 @@ section pre {
   transform: translateX(0);
 }
 .product-img {
+  height: 30vh;
   display: block;
-  width: 100%;
+  float: left;
+  border: 1px solid indianred;
+  border-radius: 44px;
+  width: 165px;
   transition: all 0.3s linear;
+  margin-bottom: 1%;
 }
 .img-container:hover .product-img {
   opacity: 0.5;
@@ -373,5 +378,64 @@ footer {
     margin: 10px 8px;
 }
 .img-containerLi{
-  display: inline-block;
+  display: block;
+  margin-right: 15%;
+  margin-left: 10%;
+  margin-bottom: 2%;
+  
+  border-bottom: 1px groove tomato;
+}
+.totalEl{
+  float: right;
+  margin-right: 20% ;
+  margin-top: 17%;
+  /* background-color: tomato; */
+  font-size: 150%;
+}
+.priceEl{
+  float: right;
+  margin-right: 3% ;
+  margin-top: 17%;
+  /* background-color: tomato; */
+  font-size: 150%;
+}
+.Qty{
+  float: right;
+  margin-right: 3% ;
+  margin-top: 17%;
+  /* background-color: tomato; */
+  font-size: 150%;
+
+}
+.name{
+  float: left;
+  font-size: 200%;
+  color:tomato; 
+  margin-left: 20% ;
+  margin-top: -18%;
+}
+#total{
+  float:right;
+  margin-right: 20%;
+  margin-top: -1%;
+  font-size: 130%;
+}
+#submit{
+  margin-top: 2%;
+  float: right;
+  margin-right: -110px;
+}
+#submit {
+  /* position: absolute; */
+  /* top: 70%; */
+  /* right: 0; */
+  background: #f09d51;
+  border: none;
+  padding: 10px 7px;
+  font-weight: bold;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+#submit:hover {
+  color: #fff;
 }

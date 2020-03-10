@@ -5,6 +5,7 @@ getitem()
 var articlEl = document.querySelector('.cart');
 var ulel=document.createElement('ul')
 articlEl.appendChild(ulel)
+ulel.setAttribute('class','asdd')
 var total = 0;
 
 renderlist();
@@ -21,10 +22,10 @@ articlEl.addEventListener('click',function(event){
 
                 cart[i].click -- ;
                 var pQty = document.getElementById(`${cart[i].name} Qty`)
-                pQty.innerHTML  = `Qty: ${cart[i].click}` 
+                pQty.innerHTML  = `Qty: ${cart[i].click} .Pc` 
 
                 var pTotal = document.getElementById(`${cart[i].name} TotalPrice`)
-                pTotal.innerHTML  = `Total Price: ${cart[i].click * cart[i].price}`
+                pTotal.innerHTML  = `Total Price: ${(cart[i].price * cart[i].click)} .JD`
             }
             else
             {
@@ -56,23 +57,32 @@ function renderlist(){
         buttonEl.setAttribute('class', 'bag-btn'); 
         buttonEl.setAttribute('data-id', '1'); 
         buttonEl.setAttribute('id',cart[i].name);  
-        divEl.appendChild(buttonEl);       
+        divEl.appendChild(buttonEl); 
         var pEl=document.createElement('p');
         buttonEl.appendChild(pEl);
         pEl.setAttribute("id",cart[i].name)
-        pEl.textContent= "Delete"
-        var pElCount=document.createElement('p');
-        divEl.appendChild(pElCount);
-        pElCount.innerHTML = `Qty: ${cart[i].click}`
-        pElCount.setAttribute('id' , `${cart[i].name} Qty`)
-        var pElPrice=document.createElement('p');
-        divEl.appendChild(pElPrice);
-        pElPrice.innerHTML = `Price: ${cart[i].price}`
+        pEl.textContent= "Remove from the cart" 
         var pElTotalPrice=document.createElement('p');
         divEl.appendChild(pElTotalPrice);
-        pElTotalPrice.innerHTML = `Total Price: ${(cart[i].price * cart[i].click)}`
+        pElTotalPrice.innerHTML = `Total Price: ${(cart[i].price * cart[i].click)} .JD`
         pElTotalPrice.setAttribute("id",`${cart[i].name} TotalPrice`)
-        total =total+(cart[i].price * cart[i].click)  
+        pElTotalPrice.setAttribute("class",'totalEl')
+        total =total+(cart[i].price * cart[i].click)      
+        var pElPrice=document.createElement('p');
+        divEl.appendChild(pElPrice);
+        pElPrice.innerHTML = `Price: ${cart[i].price} .JD`
+        pElPrice.setAttribute("class",'priceEl')
+        var pElCount=document.createElement('p');
+        divEl.appendChild(pElCount);
+        pElCount.innerHTML = `Qty: ${cart[i].click} .Pc`
+        pElCount.setAttribute('id' , `${cart[i].name} Qty`)
+        pElCount.setAttribute('class' , 'Qty')
+        setTotal()
+        var pElName=document.createElement('p');
+        divEl.appendChild(pElName);
+        pElName.innerHTML = `Item: ${cart[i].name} :-`
+        pElName.setAttribute('id' , `${cart[i].name} Qty`)
+        pElName.setAttribute('class' , 'name')
         setTotal()
       }
       var pElAllPrice=document.createElement('p');
