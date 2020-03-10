@@ -62,7 +62,7 @@ function renderlist(){
         divEl.appendChild(ImageEl);       
         ImageEl.setAttribute('src', productObj[i].url);
         ImageEl.setAttribute('alt', productObj[i].name);  
-        ImageEl.setAttribute('id', productObj[i].name);  
+        ImageEl.setAttribute('id', `img${i}`);  
         ImageEl.setAttribute('class', 'product-img');  
         var buttonEl = document.createElement('button'); 
         buttonEl.setAttribute('class', 'bag-btn'); 
@@ -77,15 +77,28 @@ function renderlist(){
         buttonEl.appendChild(pEl);
         pEl.setAttribute("id",String(i))
         pEl.textContent= "ADD TO CART"
+        var divElData = document.createElement('div');
+        divEl.appendChild(divElData); 
+        divElData.setAttribute('class', 'div-data'); 
+        var pEl2=document.createElement('p');
+        divElData.appendChild(pEl2);
+        pEl2.setAttribute('class','prod-price')
+        pEl2.textContent= `${productObj[i].price} JDs`
+        var pEl3=document.createElement('p');
+        divElData.appendChild(pEl3);
+        pEl3.setAttribute('class','prod-name');
+        pEl3.textContent= productObj[i].name;
         
 }}
 
 renderlist();
 //To make event on click and set the opject of the the img on a new productObj
-var numItem=document.querySelector('.cartItems')
+var numItem=document.querySelector('.cart-num')
 var pel=document.createElement('p')
-numItem.appendChild(pel)
-pel.textContent=cart.length
+numItem.appendChild(pel);
+pel.textContent=cart.length;
+pel.setAttribute('class','cartCounter');
+
  var eventos= document.querySelector('.product')
  eventos.addEventListener('click',function(){
     if (Number(event.target.id) < productObj.length ){ 
