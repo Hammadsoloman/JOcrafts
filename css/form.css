@@ -1,124 +1,436 @@
-body{
-    display: block;
+ .form-style-5{
+	max-width: 50%;
+	padding: 10px 20px;
+	background: #f4f7f8;
+	margin: 10px auto;
+	padding: 20px;
+	background: #f4f7f8;
+	border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    animation: bounceInLeft 2s ease alternate forwards;
 
 }
+@keyframes bounceInLeft {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(-3000px, 0, 0);
+      transform: translate3d(-3000px, 0, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(25px, 0, 0);
+      transform: translate3d(25px, 0, 0);
+    }
+  
+    75% {
+      -webkit-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(5px, 0, 0);
+      transform: translate3d(5px, 0, 0);
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
 
-form{
-    display: block;
-    margin: 30px 243px;
-    padding: 18px 16px;
+.form-style-5 fieldset{
+	border: none;
 }
-
-form legend {
-    
-    font-size: 25px;
-    margin-bottom: 17px;
+.form-style-5 legend {
+	font-size: 1.4em;
+    margin-bottom: 30px;
     text-align: center;
-    font-family: fantasy;
-}
-
-form label {
-    display: block;
-    font-family: monospace;
-    margin-bottom: 10px;
-    margin-top: 22px;
-}
-
- input#number ,input#Payment ,input#CustomerIDModal{
-    width: 350px;
-    padding-left: 9px;
+    font-family: unset;
+    font-weight: 700;
+    animation: swing 3s ease alternate forwards;
 
 }
-input#location {
-    width: 350px;
-    padding-left: 9px;
+@keyframes swing {
+    20% {
+      -webkit-transform: rotate3d(0, 0, 1, 15deg);
+      transform: rotate3d(0, 0, 1, 15deg);
+    }
+  
+    40% {
+      -webkit-transform: rotate3d(0, 0, 1, -10deg);
+      transform: rotate3d(0, 0, 1, -10deg);
+    }
+  
+    60% {
+      -webkit-transform: rotate3d(0, 0, 1, 5deg);
+      transform: rotate3d(0, 0, 1, 5deg);
+    }
+  
+    80% {
+      -webkit-transform: rotate3d(0, 0, 1, -5deg);
+      transform: rotate3d(0, 0, 1, -5deg);
+    }
+  
+    to {
+      -webkit-transform: rotate3d(0, 0, 1, 0deg);
+      transform: rotate3d(0, 0, 1, 0deg);
+    }
+  }
+.form-style-5 label {
+	display: block;
+    margin-bottom: 8px;
+    animation: bounceInRight 3s ease alternate forwards;
 
 }
+.form-style-5 input[type="text"],
+.form-style-5 input[type="date"],
+.form-style-5 input[type="datetime"],
+.form-style-5 input[type="email"],
+.form-style-5 input[type="number"],
+.form-style-5 input[type="search"],
+.form-style-5 input[type="time"],
+.form-style-5 input[type="url"],
+.form-style-5 input[type="tel"],
 
-input#number {
-    margin-bottom: 0px;
-    margin-left: 1px;
+.form-style-5 textarea,
+.form-style-5 select {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	background-color: #e8eeef;
+	color:#8a97a0;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    animation: bounceInLeft 3s ease alternate forwards;
+
 }
+.form-style-5 input[type="text"]:focus,
+.form-style-5 input[type="date"]:focus,
+.form-style-5 input[type="datetime"]:focus,
+.form-style-5 input[type="email"]:focus,
+.form-style-5 input[type="number"]:focus,
+.form-style-5 input[type="search"]:focus,
+.form-style-5 input[type="time"]:focus,
+.form-style-5 input[type="url"]:focus,
+.form-style-5 textarea:focus,
+.form-style-5 select:focus{
+	background: #d2d9dd;
+}
+.form-style-5 select{
+	-webkit-appearance: menulist-button;
+	height:35px;
+}
+.form-style-5 .number {
+    background: #766b79;
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 15px 15px 15px 0px;
+    animation: bounce 3s ease alternate forwards;
 
-form input[type="text"]:focus{
-        background: #d2d9dd;
     
 }
+@keyframes bounce {
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    40%,
+    43% {
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      transform: translate3d(0, -30px, 0);
+      transform: translate3d(0, -30px, 0);
+    }
+  
+    70% {
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      transform: translate3d(0, -15px, 0);
+      transform: translate3d(0, -15px, 0);
+    }
+  
+    90% {
+      transform: translate3d(0, -4px, 0);
+      transform: translate3d(0, -4px, 0);
+    }
+  }
 
-input[type="submit"] {
+.form-style-5 input[type="submit"],
+.form-style-5 input[type="button"]
+{
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	margin: 0 auto;
+  background:rgb(40, 79, 110);
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+  border: 1px solid #f7e567;
+	border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.form-style-5 input[type="submit"]:hover,
+.form-style-5 input[type="button"]:hover
+{
+  background-color:#615661 ;
+}
+button {
+    margin-left: 87%;
+    margin-top: 2%;
+}
+button a {
     display: block;
-    width: 50%;
-    margin: 5px 256px;
-    padding: 19px 39px 18px 39px;
-    color: #FFF;
-    margin-top: 23px;
-    background: #b7816c;
+    color: darkgoldenrod;
+    font-size: 19px;
+    text-decoration: none;
+    padding: 1px 17px; 
+}
+
+/* ------------------- header--------------------------------------- */
+
+header{
+    position: sticky;
+    top: 0;
+    width:auto ;
+    overflow: auto;
+    border-bottom: 2px solid ;
+    background-color: rgb(107, 72, 80);
+    opacity: 80%;
+    z-index: 2;
+    padding-right: 2%;
+    padding-left: 2%;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 1);
+  
+    }
+  header img {
+    width: 180px;
+    height: 90px; 
+  }
+  
+  .logo{
+    float: left;
+  
+  }
+  
+  nav{
+    padding-top:3% ;
+    float: right;
+  }
+  
+  nav ul{
+    width: auto;
+    overflow: auto;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 5px 15px;
+  
+  }
+  
+  nav ul li:hover{
+    border: 1px solid #fff;
+    background-color: rgb(214, 192, 160);
+    transition: 0.5s;
+  
+  
+  }
+  
+  nav ul .active{
+    border: 1px solid #fff;
+    background-color: rgb(214, 192, 160);
+  
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color:#fff ;
     font-size: 18px;
+  }
+  
+  #section2 {
+    padding: 93px;
+    margin-top: 7%;
+    height: 214px;
+    /* color: #f9f9f7;
     text-align: center;
-    font-style: normal;
-    border: 1px solid #7c8c89;
-}
-input[type="submit"]:hover{
-    background:black; 
-}
-h3.panel-title.display-td {
-    font-family: monospace;
-    font-weight: bold;
-    padding-top: 24px;
-    font-size: 16px;
-}
+    font-size: 25px;
+    font-style: oblique; */
+    background-color: #1b1a18;
+    opacity: 0.6;
+    /* text-shadow: 0px 2px 5px rgba(0,0,0,0.5); */
+    box-shadow: 0px 2px 25px rgba(0,0,0,0.5);
+  }
+  /* -----------------------------footer-------------------- */
+  
+  
+  footer {
+    background-color: #020202;
+    opacity: 80%;
+    text-align: center;
+    margin-top: 10%;
+    color: rgb(245, 244, 244);
+    font-size: 12px;
+    padding: 22px 0px;
+    top: 32%;
+    width: 100%;
+    position: relative;
+  }
+  
+  p#follow {
+    margin-top: 0%;
+    margin-left: 1%;
+    font-size: 21px;
+    float: left;
+    font-family: cursive;
+    animation: bounceInRight 5s ease alternate forwards;
 
-.credit-card-box .panel-heading img {
-    padding-top: 26px;
-    padding-right: 65px;
-    display: block;
-    width: 125px;
 }
+@keyframes bounceInRight {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(3000px, 0, 0);
+      transform: translate3d(3000px, 0, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(-25px, 0, 0);
+      transform: translate3d(-25px, 0, 0);
+    }
+  
+    75% {
+      -webkit-transform: translate3d(10px, 0, 0);
+      transform: translate3d(10px, 0, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(-5px, 0, 0);
+      transform: translate3d(-5px, 0, 0);
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
 
+p#Copy {
+    color: cornsilk;
+    font-family: cursive;
+    text-align: center;
+    margin-top: 5%;
+}
+p#more {
+    font-family: cursive;
+    font-size: 15px;
+    padding-top: 40px;
+    float: left;
+    margin-left: 4%;
+}
+  
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 3px;
+    height: 0px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    animation: bounceInLeft 5s ease alternate forwards;
 
-
-/* CSS for Credit Card Payment form */
-.credit-card-box .panel-title {
-    display: inline;
-    font-weight: bold;
-}
-.credit-card-box .form-control.error {
-    border-color: red;
-    outline: 0;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(255,0,0,0.6);
-}
-.credit-card-box label.error {
-  font-weight: bold;
-  color: red;
-  padding: 2px 8px;
-  margin-top: 2px;
-}
-.credit-card-box .payment-errors {
-  font-weight: bold;
-  color: red;
-  padding: 2px 8px;
-  margin-top: 2px;
-}
-.credit-card-box label {
-    display: block;
-}
-/* The old "center div vertically" hack */
-.credit-card-box .display-table {
-    display: table;
-}
-.credit-card-box .display-tr {
-    display: table-row;
-}
-.credit-card-box .display-td {
-    display: table-cell;
-    vertical-align: middle;
-    width: 50%;
-}
-/* Just looks nicer */
-.credit-card-box .panel-heading img {
-    min-width: 180px;
-}
-
-
-
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
     
+  .fa-skype {
+    background: #00aff0;
+    color: white;
+  }
+  
+  div#icons {
+    float: right;
+    padding-right: 14px;
+    margin: -12px 8px;  }
