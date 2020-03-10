@@ -1,17 +1,102 @@
-/* @font-face {
+header {
+  position: sticky;
+  top: 0;
+  width: auto;
+  overflow: auto;
+  border-bottom: 2px solid;
+  background-color: #5e5c5999;
+  /* opacity: 60%; */
+  z-index: 2;
+  padding-right: 2%;
+  padding-left: 2%;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 1);
+}
+
+header img {
+  width: 180px;
+  height: 90px; 
+}
+
+.logo{
+  float: left;
+
+}
+
+nav{
+  padding-top:3% ;
+  float: right;
+}
+
+nav ul{
+  width: auto;
+  overflow: auto;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  padding: 5px 15px;
+
+}
+
+nav ul li:hover{
+  border: 1px solid #fff;
+  background-color: rgb(214, 192, 160);
+  transition: 0.5s;
+
+
+}
+
+nav ul .activ{
+  border: 1px solid #fff;
+  background-color: rgb(214, 192, 160);
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color:#fff ;
+  font-size: 18px;
+}
+*{
+  padding : 0;
+  margin:0 ;
+  font-family :  Roboto, sans-serif;
+}
+
+.div-data {
+  text-align: center;
+  background-color: rgba(90, 87, 83, 0.2);
+  height: 54px;
+  padding: 16px;
+  font-size: 16px;
+  font-family: monospace;
+  letter-spacing: 1px;
+  line-height: 26px;
+}
+
+
+
+
+
+
+
+
+
+@font-face {
     font-family: 'FontAwesome';
     src: url('../fonts/fontawesome-webfont.eot?v=4.5.0');
     src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
     font-weight: normal;
     font-style: normal;
-  } */
-  nav{
+  }
+  /* nav{
     background-color: rgba(255, 228, 196, 0.5);
     height: 55px;
     position: sticky;
     top: 0;
     z-index: 1;
-}
+} */
 .cartButton {
     position: relative;
     cursor: pointer;
@@ -27,19 +112,15 @@
     padding: 0 5px;
     border-radius: 30%;
 }
-header {
-    background: url("/img/Annotation.png") center/cover no-repeat;
-    height: 400px;
-  }
-  .banner {
+  /* .banner {
     text-align: center;
     background: rgba(255, 255, 255, 0.8);
     display: inline-block;
     padding: 2rem;
     margin-left: 25%;
     margin-top: 90px;
-  }
-  .bannerTitle {
+  } */
+  /* .bannerTitle {
     font-size: 3.4rem;
     text-transform: uppercase;
     margin-bottom: 3rem;
@@ -53,55 +134,70 @@ header {
     border: 1px solid #f09d51;
     transition: all 0.3s linear;
     cursor: pointer;
-  }
-  .bannerButton:hover {
+  } */
+  /* .bannerButton:hover {
     background: transparent;
     color: #f09d51;
-  }
-  .products {
+  } */
+  /* .products {
     padding: 100px 0;
-  }
+  } */
   .section-title h2 {
     text-align: center;
     font-size: 45px;
-    margin-bottom: 100px;
+    padding: 170px 0 50px 0;
+    background-image: url("../images/Jo (5).png");
+    height: 150px;
+    margin: 40px 10px;
+    background-position: center;
+    background-repeat: no-repeat;
   }
+
+
   .product-center {
-    width: 200px;
     margin: 0 auto;
   }
   .img-container {
     position: relative;
     overflow: hidden;
+    display: inline-block;
+    margin: 70px;
+
   }
   .bag-btn {
     position: absolute;
-    top: 70%;
+    top: 55%;
     right: 0;
-    background: #f09d51;
+    background: #b3534cb8;
     border: none;
     padding: 10px 7px;
-    font-weight: bold;
-    transition: all 0.3s linear;
+    font-weight: normal;
+    transition: all 0.4s linear;
     transform: translateX(101%);
     cursor: pointer;
-  }
+    font-family: monospace;
+    letter-spacing: 3px;
+}
   .bag-btn:hover {
     color: #fff;
   }
-  /* .fa-shopping-cart {
+  /* .fa-shopping-cart ,.cartItems {
     margin-right: 0.5rem;
+    float:right;
   } */
   .img-container:hover .bag-btn {
     transform: translateX(0);
   }
   .product-img {
-    display: block;
-    width: 100%;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
     transition: all 0.3s linear;
+
   }
   .img-container:hover .product-img {
     opacity: 0.5;
+    
   }
   .productInfo {
     background-color: rgba(255, 228, 196, 0.5);

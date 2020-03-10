@@ -76,6 +76,17 @@ function renderlist(){
         buttonEl.appendChild(pEl);
         pEl.setAttribute("id",String(i))
         pEl.textContent= "ADD TO CART"
+        var divElData = document.createElement('div');
+        divEl.appendChild(divElData); 
+        divElData.setAttribute('class', 'div-data'); 
+        var pEl2=document.createElement('p');
+        divElData.appendChild(pEl2);
+        pEl2.setAttribute('class','prod-price')
+        pEl2.textContent= `${productObj[i].price} JDs`
+        var pEl3=document.createElement('p');
+        divElData.appendChild(pEl3);
+        pEl3.setAttribute('class','prod-name');
+        pEl3.textContent= productObj[i].name;
         
 }}
 
