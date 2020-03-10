@@ -92,10 +92,12 @@ function renderlist(){
 
 renderlist();
 //To make event on click and set the opject of the the img on a new productObj
-var numItem=document.querySelector('.cartItems')
+var numItem=document.querySelector('.cart-num')
 var pel=document.createElement('p')
-numItem.appendChild(pel)
-pel.textContent=cart.length
+numItem.appendChild(pel);
+pel.textContent=cart.length;
+pel.setAttribute('class','cartCounter');
+
  var eventos= document.querySelector('.product')
  eventos.addEventListener('click',function(){
     if (Number(event.target.id) < productObj.length ){ 

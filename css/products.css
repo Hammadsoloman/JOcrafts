@@ -49,8 +49,23 @@ nav ul li:hover{
 .active{
   border: 1px solid #fff;
   background-color: #b1615b9c;
-  
-  
+
+}
+
+.shoppingCart{
+  font-size: 40px; 
+  color: rgb(54, 54, 54);
+}
+
+.product{ /*article element for rendering all images*/
+  /* -webkit-animation: blurFadeInOut 15s ease-in backwards; */
+	/* -moz-animation: blurFadeInOut 15s ease-in backwards; */
+	/* -ms-animation: blurFadeInOut 15s ease-in forwards; */
+	/* animation: blurFadeInOut 15s ease-in forwards; */
+    /* -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    animation-delay: 0s; */
 }
 
 nav ul li a {
@@ -64,7 +79,7 @@ nav ul li a {
   margin:0 ;
 }
 
-.div-data {
+.div-data { /**/
   text-align: center;
   text-overflow: clip;
   background-color: rgba(90, 87, 83, 0.2);
@@ -76,6 +91,7 @@ nav ul li a {
   line-height: 26px;
   text-transform: uppercase;
   -webkit-text-stroke-width: thin;
+
 }
 /* img#img1 {
   width: 295px;
@@ -108,7 +124,7 @@ body{
     top: 0;
     z-index: 1;
 } */
-.cartButton {
+.cart-num {
     position: relative;
     cursor: pointer;
     padding-top: 15px;
@@ -162,7 +178,7 @@ body{
     margin: 30px 10px;
     background-position: center;
     background-repeat: no-repeat;
-    font-family: monospace;
+    font-family: Varela+Round;
     letter-spacing: 4px;
     color: rgba(0, 0, 0, .8);
 
@@ -174,15 +190,16 @@ body{
 	/* font-size: 90px; */
 	/* width: 100%; */
 	/* text-align: center; */
-	/* color: transparent; */
-	-webkit-animation: blurFadeInOut 3s ease-in forwards;
-	-moz-animation: blurFadeInOut 3s ease-in forwards;
-	-ms-animation: blurFadeInOut 3s ease-in forwards;
-	animation: blurFadeInOut 3s ease-in forwards;
+  /* color: transparent; */
+  
+	/* -webkit-animation: blurFadeInOut 10s ease-in forwards;
+	-moz-animation: blurFadeInOut 10s ease-in forwards;
+	-ms-animation: blurFadeInOut 10s ease-in forwards;
+	animation: blurFadeInOut 10s ease-in forwards;
     -webkit-animation-delay: 0s;
     -moz-animation-delay: 0s;
     -ms-animation-delay: 0s;
-    animation-delay: 0s;
+    animation-delay: 0s; */
   }
   
 
@@ -195,8 +212,17 @@ body{
     overflow: hidden;
     display: inline-block;
     margin: 70px;
+    animation: blurFadeInOut 15s ease-in forwards;
+    -ms-animation: blurFadeInOut 15s ease-in forwards;
 
   }
+  p.prod-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 142px;
+    margin: 0 auto;
+}
   .bag-btn {
     position: absolute;
     top: 55%;
@@ -226,7 +252,6 @@ body{
     width: 250px;
     height: 250px;
     transition: all 0.3s linear;
-
   }
   .img-container:hover .product-img {
     opacity: 0.5;
