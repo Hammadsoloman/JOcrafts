@@ -7,7 +7,14 @@
 	background: #f4f7f8;
 	border-radius: 8px;
     font-family: Georgia, "Times New Roman", Times, serif;
-    animation: bounceInLeft 2s ease alternate forwards;
+    animation: bounceInLeft 4s ease alternate forwards;
+    display: none;
+    bottom:0;
+    position:fixed;
+    overflow-y:scroll;
+    overflow-x:hidden;
+      top: 16%;
+     left: 23%; 
 
 }
 @keyframes bounceInLeft {
@@ -57,7 +64,7 @@
     text-align: center;
     font-family: unset;
     font-weight: 700;
-    animation: swing 3s ease alternate forwards;
+    animation: swing 6s ease alternate forwards;
 
 }
 @keyframes swing {
@@ -152,7 +159,7 @@
 	text-align: center;
 	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
     border-radius: 15px 15px 15px 0px;
-    animation: bounce 3s ease alternate forwards;
+    animation: bounce 6s ease alternate forwards;
 
     
 }
@@ -434,3 +441,5 @@ p#more {
     float: right;
     padding-right: 14px;
     margin: -12px 8px;  }
+
+    

@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="/css/form.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body>
+<body id=#bodyhide>
  <header>  <div class="logo">
     <img src="/images/FINAL (2).png" alt="logo">
   </div>
@@ -22,6 +24,7 @@
     </ul>
   </nav>
 </header>
+
  <main>
   <section class="products">
     <div class="section-title">
@@ -36,11 +39,66 @@
             </div>
         </article>
         <div>
-        <a href="/pages/form.html"><button type="submit" >proceed</button></a>    
+        <!-- <a href="/pages/form.html"><button type="submit" >proceed</button></a>   -->
+        <a href="#payForm"><button type="submit" id ='butn' >proceed</button></a>    
+  
         </div>
     </div>
 </section>
  </main>
+
+ <!-- ------------------------------------------------------------------- -->
+ <!-- form -->
+<!-- --------------------------------------------------------------------- -->
+<div class="form-style-5">
+  <form id="payForm">
+    <fieldset>
+      <legend> Customer Payment Data </legend>
+
+      <label for="CustomerIDModal"><span class="number">1</span> Customer ID & Phone Number </label>
+      <input type="number" id="CustomerIDModal" placeholder="Enter Customer ID *" required>
+      <input type="number" id="number" placeholder="Enter Phone number *" required>
+
+      <label for="CustomerIDModal"><span class="number">2</span> Email & Adress</label>
+      <input type="email" id="email" placeholder="Your Email *" required>
+      <textarea id="location" placeholder="Enter your location" required></textarea>
+    </fieldset>
+
+    <fieldset>
+      <label for="CustomerIDModal"><span class="number">3</span> Payment Options & Card Number</label>
+      <div class="row">
+        <div class="col-xs-12 col-md-4">
+          <div class="panel panel-default credit-card-box">
+            <div class="panel-heading display-table">
+              <div class="row display-tr">
+                <div class="display-td">
+                  <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+                </div>
+              </div>
+            </div>
+            <select id="payment" name="field4">
+              <option value="visa">VISA</option>
+              <option value="Master Card">Master Card</option>
+              <option value="DISCOVER">DISCOVER</option>
+              <option value="AMERICAN EXPRESS">AMERICAN EXPRESS</option>
+            </select>
+            <input type="number" id="cardNumber" placeholder="Valid Card Number" autocomplete="cc-number" required>
+            <input type="tel" id="cardExpiry" class="form-control" name="cardExpiry"
+              placeholder="Enter Card Expiry   MM / YY" autocomplete="cc-exp" required />
+            <input type="tel" id="cardCVC" class="form-control" name="cardCVC" placeholder="Enter CV Code"
+              autocomplete="cc-csc" required />
+            <input type="text" id="couponCode" class="form-control" name="couponCode" placeholder="Enter Coupon Code">
+    </fieldset>
+    <input id="submitButton" type="submit">
+    <button><a href="cart.html">Close</a></button>
+  </form>
+</div>
+ <div>
+    <p id="totalprice"></p>
+  </div>
+
+<!-- ----------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
  <footer>
     <div id="icons">
         <a href="#" class="fa fa-facebook"></a>
