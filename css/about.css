@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Kreon|ZCOOL+XiaoWei&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Patua+One&display=swap');
 *{
    padding : 0;
     margin:0 ;
@@ -8,7 +9,7 @@
 }
 
 body{
-    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url("/images/back-about.jpg") ;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url("/images/wallpaper.jpg") ;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -200,7 +201,7 @@ footer{
   }
 
   main h3{
-    margin-left: 60px;
+    /* margin-left: 10px; */
     font-size: 25px;
 }
 /*----------------------------End Footer---------------*/  
@@ -221,7 +222,7 @@ main article {
     background-repeat: no-repeat;
     background-color: rgba(8, 6, 8, 0.75);   
     color: #fff; 
-    animation: bounceInUp 2s ease alternate forwards;
+    animation: bounceInUp 3s ease alternate forwards;
 }
 main article ul{
     list-style: circle;
@@ -243,6 +244,7 @@ p{
     font-family: 'Special Elite', cursive;
 
 }
+
 main h2 {
     text-align: center;
     font-size: 25px;
@@ -253,10 +255,11 @@ main h1 {
     font-size: 70px;
     text-align: center;
     padding: 72px;
-    font-family: cursive;
+    font-family: 'Patua One', cursive;
     -webkit-text-stroke: white 2px;
     margin: 69px 0px;
-    animation: bounceInDown 2s ease alternate forwards;
+    animation: bounceInDown 3s ease alternate forwards;
+    color: rgb(226, 217, 217);
   
     
 }
@@ -279,7 +282,7 @@ main img {
 
 article:nth-child(1):hover{
     background-image: url(/images/abdallah.png);
-    
+    background-position : center;  
     ;
 }
 article:nth-child(1) ul:hover{
@@ -287,6 +290,8 @@ article:nth-child(1) ul:hover{
 }
 article:nth-child(2):hover{
     background-image: url(/images/marah.png);
+    background-position : center;
+
     ;
 }
 article:nth-child(2) ul:hover{
@@ -294,6 +299,8 @@ article:nth-child(2) ul:hover{
 }
 article:nth-child(3):hover{
     background-image: url(/images/hammad.png);
+    background-position : center;
+
     ;
 }
 article:nth-child(3) ul:hover{
@@ -301,6 +308,8 @@ article:nth-child(3) ul:hover{
 }
 article:nth-child(4):hover{
     background-image: url(/images/bushra.png);
+    background-position : center;
+
     ;
 }
 article:nth-child(4) ul:hover{
@@ -308,6 +317,8 @@ article:nth-child(4) ul:hover{
 }
 article:nth-child(5):hover{
     background-image: url(/images/reham.png);
+    background-position : center;
+
     ;
 }
 article:nth-child(5) ul:hover{
@@ -321,6 +332,9 @@ article:nth-child(5) ul:hover{
    }
 .rights-text{
 font-family: 'Times New Roman', Times, serif;}
+p.rights-text {
+    margin-right: 170px;
+}
 
 
 /*******animation**********/
