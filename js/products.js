@@ -31,7 +31,8 @@ var products = ['Baby blanket.jpg',
 'valentine’s disc.jpg',
 'JORDANIAN KHANJAR.jpg',
 'embroidered jaket.jpg'];
-var prices = [1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10];
+var prices = [1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1];
+console.log(prices.length, products.length)
 var productObj =[];
 var cart =[];
 var articlEl = document.querySelector('.product');
@@ -112,11 +113,11 @@ pel.setAttribute('class','cartCounter');
     }
  })
  
-
 function setItem(){
     var cartproset=JSON.stringify(cart)
     localStorage.setItem('cart',cartproset)
 }
+
 function getitem(){
     var cartproget=localStorage.getItem('cart')
     if (JSON.parse(cartproget)!=null){
