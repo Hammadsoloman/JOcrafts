@@ -7,7 +7,7 @@
   <title>JOcrafts</title>
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/aos.css">
-  <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/css/form.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -23,107 +23,148 @@
         <li><a href="products.html">Products</a></li>
         <li><a class="gold" href="cart.html">My Cart</a></li>
         <li><a href="about.html">About us</a></li>
-        <!-- <li><a href="">Movies & Books</a></li>   -->
       </ul>
     </nav>
   </header>
-    <div>
+
+  <!-- --------------------------------------form-------------------------------------------------------- -->
+  <div class="form-style-5">
     <form id="payForm">
-        <fieldset>
-          <legend>Customer Payment Data :</legend>
-          <ul class="List">
-            <li>
-              <label for="CustomerIDModal">Customer ID</label>
-              <input required type="number" id="CustomerIDModal" min="0"
-              placeholder="Enter Customer ID" required>
-            </li>
-            <li>
-                <label for="number">Phone number</label>
-                <input required type="number" id="number" placeholder="Enter Phone number">
-            </li>
-            <li>
-                <label for="location">location</label>
-                <input required type="text" id="location" placeholder="Enter your location">
-            </li>
-            <div class="row">
-                <div class="col-xs-12 col-md-4">
-                    <div class="panel panel-default credit-card-box">
-                        <div class="panel-heading display-table">
-                            <div class="row display-tr">
-                                <h3 class="panel-title display-td">Payment Details</h3>
-                                <div class="display-td">
-                                    <img class="img-responsive pull-right"
-                                        src="http://i76.imgup.net/accepted_c22e0.png">
-                                </div>
-                            </div>
-                        </div>
-                    <li>
-                        <label for="Payment">Payment Options</label>
-                        <select name = "payment">
-                        <option value="visa">VISA</option>
-                        <option value="Master Card">Master Card</option>
-                        <option value="DISCOVER">DISCOVER</option>
-                        <option value="AMERICAN EXPRESS">AMERICAN EXPRESS</option>
-                        </select> 
-                    </li>
-                    <li>    
-                        <label required for="cardNumber">CARD NUMBER</label>
-                        <input required type="number" id="cardNumber" placeholder="Valid Card Number" autocomplete="cc-number"
-                        required autofocus>
-                    </li>
-                    <li>
-                        <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span
-                            class="visible-xs-inline">EXP</span> DATE</label>
-                        <input type="tel" id="cardExpiry" class="form-control" name="cardExpiry"
-                        placeholder="MM / YY" autocomplete="cc-exp" required />
-                    </li>
-                    <li>
-                        <label for="cardCVC">CV CODE</label>
-                        <input type="tel" id="cardCVC" class="form-control" name="cardCVC" placeholder="CVC"
-                        autocomplete="cc-csc" required />
-                    </li>
-                    <li>
-                        <label for="couponCode">COUPON CODE</label>
-                        <input type="text" id="couponCode" class="form-control" name="couponCode"/>
-                    </li>
-                    <li>
-                        <input id="submitButton" type="submit">
-                        <button><a href = "cart.html">Close</a>l</button>
-                    </li> 
-            </ul>
+      <fieldset>
+        <legend> Customer Payment Data </legend>
+
+        <label for="CustomerIDModal"><span class="number">1</span> Customer ID & Phone Number </label>
+        <input type="number" id="CustomerIDModal" placeholder="Enter Customer ID *" required>
+        <input type="number" id="number" placeholder="Enter Phone number *" required>
+
+        <label for="CustomerIDModal"><span class="number">2</span> Email & Adress</label>
+        <input type="email" id="email" placeholder="Your Email *" required>
+        <textarea id="location" placeholder="Enter your location" required></textarea>
       </fieldset>
-      </form>
+
+      <fieldset>
+        <label for="CustomerIDModal"><span class="number">3</span> Payment Options & Card Number</label>
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <div class="panel panel-default credit-card-box">
+              <div class="panel-heading display-table">
+                <div class="row display-tr">
+                  <div class="display-td">
+                    <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+                  </div>
+                </div>
+              </div>
+              <select id="payment" name="field4">
+                <option value="visa">VISA</option>
+                <option value="Master Card">Master Card</option>
+                <option value="DISCOVER">DISCOVER</option>
+                <option value="AMERICAN EXPRESS">AMERICAN EXPRESS</option>
+              </select>
+              <input type="number" id="cardNumber" placeholder="Valid Card Number" autocomplete="cc-number" required>
+              <input type="tel" id="cardExpiry" class="form-control" name="cardExpiry"
+                placeholder="Enter Card Expiry   MM / YY" autocomplete="cc-exp" required />
+              <input type="tel" id="cardCVC" class="form-control" name="cardCVC" placeholder="Enter CV Code"
+                autocomplete="cc-csc" required />
+              <input type="text" id="couponCode" class="form-control" name="couponCode" placeholder="Enter Coupon Code">
+      </fieldset>
+      <input id="submitButton" type="submit">
+      <button><a href="cart.html">Close</a></button>
+    </form>
+  </div>
+   <div>
+      <p id="totalprice"></p>
     </div>
-    <footer>
-        <div id="icons">
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-google"></a>
-          <a href="#" class="fa fa-linkedin"></a>
-          <a href="#" class="fa fa-youtube"></a>
-          <a href="#" class="fa fa-instagram"></a>
-          <a href="#" class="fa fa-skype"></a>
-    
-    
-        </div>
-        <p id="follow">
-          Follow Us On Social Media Accounts
-        </p>
-        <p id="more">
-          Be among the first to hear about our new souvenirs , jewelries , bags and so much more !
-        </p>
-        <p id="Copy">Copy right for BUGE SMASHERS TEAM ©2020</p>
+    <!-- ---------------------------------------------------footer------------------------------------------------------------- -->
+  <footer>
+    <div id="icons">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-skype"></a>
+    </div>
+    <p id="follow">
+      Follow Us On Social Media Accounts
+    </p>
+    <p id="more">
+      Be among the first to hear about our new souvenirs , jewelries , bags and so much more !
+    </p>
+    <p id="Copy">Copy right for BUGE SMASHERS TEAM ©2020</p>
       </footer>
       <!-- <script src=""></script> -->
       <!-- aos scripts -->
-      <script src="js/home.js"></script>
-      <script src="js/aos.js"></script>
+      <script src="/js/home.js"></script>
+      <script src="/js/aos.js"></script>
       <script type="text/javascript"></script>
-    
+      <script src="/js/form.js"></script>   
     </body>
-    
-    
     </html>
-<!-- <script src="/js/form.js"></script>
-</body>
-</html> -->
+<!-- ----------------------------------------------------old form--------------------------------------------- -->
+  <!-- <div class="form-style-5">
+    <form id="payForm">
+      <fieldset>
+        <legend>Customer Payment Data :</legend>
+        <ul class="List">
+          <li>
+            <label for="CustomerIDModal">Customer ID</label>
+            <input required type="number" id="CustomerIDModal" min="0" placeholder="Enter Customer ID" required>
+          </li>
+          <li>
+            <label for="number">Phone number</label>
+            <input required type="number" id="number" placeholder="Enter Phone number">
+          </li>
+          <li>
+            <label for="location">location</label>
+            <input required type="text" id="location" placeholder="Enter your location">
+          </li>
+          <div class="row">
+            <div class="col-xs-12 col-md-4">
+              <div class="panel panel-default credit-card-box">
+                <div class="panel-heading display-table">
+                  <div class="row display-tr">
+                    <h3 class="panel-title display-td">Payment Details</h3>
+                    <div class="display-td">
+                      <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+                    </div>
+                  </div>
+                </div>
+                <li>
+                  <label for="Payment">Payment Options</label>
+                  <select name="payment">
+                    <option value="visa">VISA</option>
+                    <option value="Master Card">Master Card</option>
+                    <option value="DISCOVER">DISCOVER</option>
+                    <option value="AMERICAN EXPRESS">AMERICAN EXPRESS</option>
+                  </select>
+                </li>
+                <li>
+                  <label required for="cardNumber">CARD NUMBER</label>
+                  <input required type="number" id="cardNumber" placeholder="Valid Card Number" autocomplete="cc-number"
+                    required autofocus>
+                </li>
+                <li>
+                  <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span
+                      class="visible-xs-inline">EXP</span> DATE</label>
+                  <input type="tel" id="cardExpiry" class="form-control" name="cardExpiry" placeholder="MM / YY"
+                    autocomplete="cc-exp" required />
+                </li>
+                <li>
+                  <label for="cardCVC">CV CODE</label>
+                  <input type="tel" id="cardCVC" class="form-control" name="cardCVC" placeholder="CVC"
+                    autocomplete="cc-csc" required />
+                </li>
+                <li>
+                  <label for="couponCode">COUPON CODE</label>
+                  <input type="text" id="couponCode" class="form-control" name="couponCode" />
+                </li>
+                <li>
+                  <input id="submitButton" type="submit">
+                  <button><a href="cart.html">Close</a>l</button>
+                </li>
+        </ul>
+      </fieldset>
+    </form>
+  </div>  -->
+
