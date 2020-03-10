@@ -61,7 +61,7 @@ function renderlist(){
         divEl.appendChild(ImageEl);       
         ImageEl.setAttribute('src', productObj[i].url);
         ImageEl.setAttribute('alt', productObj[i].name);  
-        ImageEl.setAttribute('id', productObj[i].name);  
+        ImageEl.setAttribute('id', `img${i}`);  
         ImageEl.setAttribute('class', 'product-img');  
         var buttonEl = document.createElement('button'); 
         buttonEl.setAttribute('class', 'bag-btn'); 
