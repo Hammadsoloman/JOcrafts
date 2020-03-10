@@ -197,12 +197,12 @@
 	padding: 19px 39px 18px 39px;
 	color: #FFF;
 	margin: 0 auto;
-    background: #615661;
+  background:rgb(40, 79, 110);
 	font-size: 18px;
 	text-align: center;
 	font-style: normal;
 	width: 100%;
-    border: 1px solid #f7e567;
+  border: 1px solid #f7e567;
 	border-width: 1px 1px 3px;
   margin-bottom: 10px;
   cursor: pointer;
@@ -210,7 +210,7 @@
 .form-style-5 input[type="submit"]:hover,
 .form-style-5 input[type="button"]:hover
 {
-	background:#ad2626;
+  background-color:#615661 ;
 }
 button {
     margin-left: 87%;
@@ -232,7 +232,7 @@ header{
     width:auto ;
     overflow: auto;
     border-bottom: 2px solid ;
-    background-color: rgb(131, 116, 93);
+    background-color: rgb(107, 72, 80);
     opacity: 80%;
     z-index: 2;
     padding-right: 2%;
