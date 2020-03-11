@@ -29,9 +29,9 @@ var products = ['Baby blanket.jpg',
 'Two button Clutch.jpg',
 'Unique cushion.jpg',
 'valentine’s disc.jpg',
-'JORDANIAN KHANJAR.jpg',
-'embroidered jaket.jpg'];
-var prices = [1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1];
+'JORDANIAN KHANJAR.jpg'
+];
+var prices = [1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10];
 console.log(prices.length, products.length)
 var productObj =[];
 var cart =[];

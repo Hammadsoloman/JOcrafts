@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans+Condensed:300&display=swap');
+
 @font-face {
   font-family: 'FontAwesome';
   src: url('../fonts/fontawesome-webfont.eot?v=4.5.0');
   src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;}
-@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
 @import url('https://fonts.googleapis.com/css?family=Kreon|ZCOOL+XiaoWei&display=swap');
+
 body{
   /* background-color: rgba(223, 180, 160, 0.15); */
 }
@@ -41,14 +44,18 @@ nav{
 nav ul {
   width: 100%;
   padding: 5px 7px 0 0;
-  font-family: sans-serif;
+  
 }
 
 nav ul li{
   display: inline-block;
   list-style: none;
   padding: 5px 15px;
-  
+  font-family: 'Open Sans Condensed', sans-serif;
+font-weight: lighter;
+letter-spacing: 2px;
+font-size: 18px;
+text-shadow: black;
 }
 
 nav ul li:hover{
@@ -261,6 +268,7 @@ nav ul li a {
     opacity: 0.5;
     
   }
+  /*FOOTER CSS*/
   footer{
     background: #303036;
     color: #d3d3d3;
@@ -302,12 +310,12 @@ nav ul li a {
     margin-bottom: 15px;
     font-size: 25px;
     letter-spacing: 3px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     padding-left: 5px;
     word-spacing: 5px;
   }
   div#links {
-    margin-left: 105px;
+    margin-left: 22px;
   }
   .slinks {
     margin: 7px;
@@ -322,7 +330,7 @@ nav ul li a {
       margin-top: 15px;
       font-size: 20px;
       letter-spacing: 3px;
-      font-family: 'Open Sans', sans-serif;
+      font-family:'Open Sans Condensed', sans-serif;
       word-spacing: 5px
   }
   .newsletter-form {
@@ -336,7 +344,7 @@ nav ul li a {
     padding: 12px 41px;
     margin-bottom: 8px;
     font-size: 12px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     color: #293043;
     background: #ddd;
     border: none;
@@ -355,7 +363,7 @@ nav ul li a {
     outline: none;
     border-radius: 8px;
     cursor: pointer;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     transition: opacity .5s linear;
   }
   .btn:hover{

@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Bellota:700|Cardo:700|Cormorant+Garamond:700|Courgette|Fredoka+One|Kalam:700|Open+Sans:700|Pacifico|Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans+Condensed:300&display=swap');
+
 /* fonts families:
 font-family: 'Bellota', cursive;
 font-family: 'Pacifico', cursive;
@@ -16,7 +18,7 @@ html, body{
     width: 100%;
     overflow-x: hidden;
     position: fixed;
-    background-color: rgba(223, 180, 160, 0.05);}
+    background-color:rgba(223, 180, 160, 0.15);}
 
 header{
     position: relative;
@@ -83,10 +85,11 @@ nav ul {
     list-style: none;
     padding: 5px 15px;
     position: sticky;
-    /* position: fixed; */
-
-
-    
+    font-family: 'Open Sans Condensed', sans-serif;
+font-weight: lighter;
+letter-spacing: 2px;
+font-size: 18px;
+text-shadow: black;
   }
   
   nav ul li:hover{
@@ -128,7 +131,9 @@ h1{
     margin-bottom: 25px;
     margin-top: 86px;
     font-family: 'Cardo', serif;
+    animation: jackInTheBox 2s ease alternate forwards; 
 }
+
 
 #welcome p{
     font-family: 'Kalam', cursive;
@@ -178,16 +183,16 @@ h1{
     height: 100%;
     display: none;
     position: absolute;
-	  opacity: 0;
+    /* opacity: 0; */
     z-index: 1;
     cursor: pointer;
     transition: opacity .2s;
     color: #FFF;
-    font-size: 156pt;
+    font-size: 42pt;
     text-align: center;
     line-height: 370px;
     font-family: "Varela Round", sans-serif;
-    background-color: rgba(255, 255, 255, .3);
+    background-color: rgba(29, 27, 27, 0.3);
     text-shadow: 0px 0px 15px rgb(119, 119, 119);
 }
 .slide:hover + .nav label { opacity: 0.5; }
@@ -210,12 +215,12 @@ input:checked + .slide-container .nav label { display: block; }
 }
 .nav-dots .nav-dot {
 	top: -5px;
-	width: 11px;
-	height: 11px;
-	margin: 0 4px;
-	position: relative;
-	border-radius: 100%;
-	display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
 	background-color: rgba(0, 0, 0, 0.6);
 }
 .nav-dots .nav-dot:hover {
@@ -311,41 +316,50 @@ div#img-container {
     transform: scale(1.1);
     cursor: pointer;
 }
+.p1 {
+    width: 40%;
+    margin-left: 6%;
+    margin-top: 5%;
+    float: left;
+    clear: right;  
+}
+p#extra-p {
+    padding-bottom: 70px;
+}
 
 section#intro {
-   
-    text-align: center;
+    /* text-align: center; */
     font-size: 22px;
-    height: 750px;
-    /* background-color: rgba(175, 101, 76, 0.329); */
+    height: 490px;
+    margin-left: 3%;
 }
-pre {
+
+/* pre {
     padding-top: 145px;
     color: rgb(32, 23, 20);
     margin: 0 auto;
     text-align: center;
 
-}
+} */
 .h3-text{
-    background-color: rgba(255, 255, 255, 0.4);
-    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.678);
-    border-radius: 300px;
-    font-family: 'Kalam', cursive;
+    
+    line-height: 50px;
     font-weight: bolder;
-    color: rgba(0, 0, 0, 0.726);
-    display: inline;
-    clear: both;
-    padding: 1%;
-    margin-left: -6%;
+    font-size: 40px ;
+    padding: 20px 0 20px 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 3px;
 }
     
     .p-text{
-        line-height: 40px;
-        letter-spacing: 2px ;
-        font-family: 'Kalam', cursive;
+        line-height: 50px;
         font-weight: lighter;
         font-size: 20px ;
-        padding: 20px 0 40px 0;
+        padding: 20px 0 20px 20px;
+        background: rgba(219, 73, 62, 0.2);
+        border-radius: 25px;
+        font-family: 'Open Sans Condensed', sans-serif;
+        letter-spacing: 2px;
     }
 /*FOOTER CSS*/
 footer{
@@ -389,12 +403,12 @@ footer{
     margin-bottom: 15px;
     font-size: 25px;
     letter-spacing: 3px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     padding-left: 5px;
     word-spacing: 5px;
   }
   div#links {
-    margin-left: 105px;
+    margin-left: 22px;
   }
   .slinks {
     margin: 7px;
@@ -409,7 +423,7 @@ footer{
       margin-top: 15px;
       font-size: 20px;
       letter-spacing: 3px;
-      font-family: 'Open Sans', sans-serif;
+      font-family:'Open Sans Condensed', sans-serif;
       word-spacing: 5px
   }
   .newsletter-form {
@@ -423,7 +437,7 @@ footer{
     padding: 12px 41px;
     margin-bottom: 8px;
     font-size: 12px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Open Sans Condensed', sans-serif;
     color: #293043;
     background: #ddd;
     border: none;
@@ -442,9 +456,35 @@ footer{
     outline: none;
     border-radius: 8px;
     cursor: pointer;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     transition: opacity .5s linear;
   }
   .btn:hover{
   opacity: .7;
+  }
+  
+@-webkit-keyframes jackInTheBox {
+    from {
+      opacity: 0;
+      -webkit-transform: scale(0.1) rotate(30deg);
+      transform: scale(0.1) rotate(30deg);
+      -webkit-transform-origin: center bottom;
+      transform-origin: center bottom;
+    }
+  
+    50% {
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+    }
+  
+    70% {
+      -webkit-transform: rotate(3deg);
+      transform: rotate(3deg);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
   }
