@@ -31,7 +31,7 @@ var products = ['Baby blanket.jpg',
 'valentine’s disc.jpg',
 'JORDANIAN KHANJAR.jpg'
 ];
-var prices = [1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10];
+var prices = [20,26,18,10,12,60,7,12,6,40,30,5,25,8,15,15,10,20,35,35,15,25,5,21,15,17,15,25,10,86];
 console.log(prices.length, products.length)
 var productObj =[];
 var cart =[];

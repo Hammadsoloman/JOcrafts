@@ -122,11 +122,13 @@ function getitem() {
    document.querySelector('.footer').style.display = 'none'
   }
 
-
-function playAudio() { 
+  function playAudio() { 
     var x = document.getElementById("myAudio"); 
     x.play(); 
     localStorage.removeItem('cart')
+    alert('Thank you')
+    window.location.href = "index.html";
+    window.location.replace("index.html");
 } 
   
 function pauseAudio() {
