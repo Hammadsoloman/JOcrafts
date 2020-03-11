@@ -6,16 +6,17 @@
   font-style: normal;}
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 @import url('https://fonts.googleapis.com/css?family=Kreon|ZCOOL+XiaoWei&display=swap');
+body{
+  /* background-color: rgba(223, 180, 160, 0.15); */
+}
 
 header {
   position: sticky;
   top: 0;
-  height: 112px;
+  height: 90px;
   width: auto;
-  overflow: auto;
-  border-bottom: 2px solid;
-  background-color: rgba(88, 75, 75, 0.71);
-  /* opacity: 60%; */
+  overflow: hidden;
+  background-color: #2a2e3185;
   z-index: 2;
   padding-right: 2%;
   padding-left: 2%;
@@ -23,50 +24,52 @@ header {
 }
 header img {
   width: 195px;
-    height: 95px;
+  height: 90px;
 }
 
 .logo{
   float: left;
-  padding-top: 14px;
-
+  clear: left;
 }
 
 nav{
-  padding-top:3% ;
+  padding-top:2% ;
   float: right;
+  clear: right;
 }
 
 nav ul {
   width: 100%;
-  padding: 0 0 6px 0;
+  padding: 5px 7px 0 0;
+  font-family: sans-serif;
 }
 
 nav ul li{
   display: inline-block;
   list-style: none;
   padding: 5px 15px;
-
+  
 }
 
 nav ul li:hover{
-  border: 1px solid #fff;
-  background-color: #b1615b9c;
-  transition: 1s ease-out;
-}
+ 
+  background-color: rgba(175, 101, 76, 0.541);
+  transition: 0.5s;
+  border-radius: 10px;
+  cursor: pointer;
 
-.active{
-  border: 1px solid #fff;
-  background-color: #b1615b9c;
 
 }
+nav ul .active{
+  
+  background-color:  rgba(175, 101, 76, 0.541);
+  border-radius: 10px;
+  transition: 0.5s;
 
-.product{ /*article element for rendering all images*/
 }
-
 nav ul li a {
   text-decoration: none;
-  color:#fff ;
+  color:rgb(248, 246, 242) ;
   font-size: 18px;
 }
 
@@ -78,7 +81,7 @@ nav ul li a {
 .div-data { /*div contains all imgs and describtion*/
   text-align: center;
   text-overflow: clip;
-  background-color: rgba(90, 87, 83, 0.2);
+  background-color: rgba(90, 87, 83, 0.103);
   height: 54px;
   padding: 16px;
   font-size: 16px;
@@ -87,10 +90,7 @@ nav ul li a {
   line-height: 26px;
   text-transform: uppercase;
   -webkit-text-stroke-width: thin;
-}
-
-body{
-  /* background-color: rgb(66, 66, 66); */
+  border-radius: 25px;
 }
    
 .cart-num {/*the parent div of the fixed cart and the counter*/
@@ -101,7 +101,7 @@ body{
   clear: right;
   z-index: 999;
   margin: 10px;
-  background: rgba(129, 129, 129, 0.63);
+  background-color: rgba(90, 87, 83, 0.2);
   border-radius: 25px
 
 }
@@ -255,148 +255,113 @@ body{
     width: 250px;
     height: 250px;
     transition: all 0.3s linear;
+    border-radius: 25px;
   }
   .img-container:hover .product-img {
     opacity: 0.5;
     
   }
-
-  /* .productInfo {
-    background-color: rgba(255, 228, 196, 0.5);
-    padding-top: 1px;
-    padding-bottom: 15px;
-  } */
-/* .product h3 {
-    text-transform: capitalize;
-    font-size: 20px;
-    margin-top: 18px;
-    text-align: center;
+  footer{
+    background: #303036;
+    color: #d3d3d3;
+    height: 250px;
+    position: relative;
   }
-  
-  .product h4 {
-    margin-top: 0.7rem;
-    letter-spacing: var(--mainSpacing);
-    color: var(--primaryColor);
+  img#footerlogo {
+    width: 68%;
+    height: 80%;
+    margin-top: 4%;
+    margin-left: 3%;
+    opacity: 85%;
+  }
+  .footer-content{
+    /* border: 1px solid red; */
+    height: 200px;
+    display: flex;
+  }
+  .footer-section{
+    flex: 1;
+    padding: 10px 0;
+    /* border: 1px solid white; */
+  }
+  .footer-bottom {
+    background: #343a40;
+    color: #686868;
+    /* height: 50px; */
     text-align: center;
-  } */
-
-
-  
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 3px;
-  height: 0px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-  
-.fa-skype {
-  background: #00aff0;
-  color: white;
-}
-
-div#icons {
-  /* padding-top: 0px; */
-  float: right;
-  padding-right: 14px;
-  margin: 10px 8px;
-}
-
-footer {
-  background-color: #020202;
-  opacity: 80%;
-  text-align: center;
-  margin-top: 50%;
-  color: rgb(245, 244, 244);
-  font-size: 12px;
-  padding: 22px 0px;
-  top: 32%;
-  width: 100%;
-  position: relative;
-  bottom: 0%;
-}
-
-p#follow {
-  margin-top: 0%;
-  margin-left: -41%;
-  font-size: 21px;
-}
-p#Copy {
-  color: cornsilk;
-  font-family: monospace;
-  text-align: center;
-  margin-top: 59px;
-}
-
-#section1{
-  width: 100%;
-}
-
-p#new {
-  color: white;
-  font-size: 39px;
-  font-family: cursive;
-  margin-top: 11%;
-  padding-left: 7%;
-}
-p#more {
-  font-family: sans-serif;
-  font-size: 15px;
-  padding-top: 21px;
-  float: left;
-  margin-left: 48px;
-}
-
-label.prev {
-  /* padding: 6px 49px; */
-  margin-left: 446px;
-  margin-top: -10px;
-}
-
-
-label.next {
-  margin-top: -10px;
-  margin-right: -295px;
-}
-  
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 18px;
+    width: 100%;
+    padding-bottom: 18px;
+  }
+  p#follow {
+    margin-left: 23px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 5px;
+    word-spacing: 5px;
+  }
+  div#links {
+    margin-left: 105px;
+  }
+  .slinks {
+    margin: 7px;
+    color: rgb(226, 223, 223);
+  }
+  .slinks:hover{
+    color: rgb(218, 177, 124);
+  }
+  p#email{
+      float: right;
+      clear: right;
+      margin-top: 15px;
+      font-size: 20px;
+      letter-spacing: 3px;
+      font-family: 'Open Sans', sans-serif;
+      word-spacing: 5px
+  }
+  .newsletter-form {
+    float: right;
+    clear: right;
+    margin-right: 62px;
+    margin-top: 22px;
+  }
+  .txtb {
+    flex: 1;
+    padding: 12px 41px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #293043;
+    background: #ddd;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 9px;
+    min-width: 260px;
+  }
+  .btn {
+    padding: 8px 30px;
+    font-size: 16px;
+    color: #f1f1f1;
+    background: #fc5c64a1;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: opacity .5s linear;
+  }
+  .btn:hover{
+  opacity: .7;
+  }
+   
 @-webkit-keyframes blurFadeInOut {
 	0% {
 		opacity: 0;
