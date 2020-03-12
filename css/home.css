@@ -86,10 +86,10 @@ nav ul {
     padding: 5px 15px;
     position: sticky;
     font-family: 'Open Sans Condensed', sans-serif;
-font-weight: lighter;
-letter-spacing: 2px;
-font-size: 18px;
-text-shadow: black;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-size: 18px;
+    text-shadow: black;
   }
   
   nav ul li:hover{
@@ -488,3 +488,47 @@ footer{
       transform: scale(1);
     }
   }
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Change language>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  .dropbtn {
+    background-color: rgba(175, 101, 76, 0.541);
+    background-color: Transparent;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 1000;
+    position: fixed;
+    right: 2%;
+    top:  10%;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    background-color: #f1f1f1;
+    min-width: 10px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 7px 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color:  rgba(175, 101, 76, 0.541);;}
+  /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Change language end<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */

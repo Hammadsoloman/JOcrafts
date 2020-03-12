@@ -1,5 +1,4 @@
 var cart = [];
-
 //Callbacks/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 getitem()
 var articlEl = document.querySelector('.cart');
@@ -7,6 +6,7 @@ var ulel = document.createElement('ul')
 articlEl.appendChild(ulel)
 ulel.setAttribute('class','asdd')
 var total = 0;
+var isValed = true;
 
 renderlist();
 
@@ -124,16 +124,52 @@ function getitem() {
    document.querySelector('.footer').style.display = 'none'
   }
 
-  function playAudio() { 
-    var x = document.getElementById("myAudio"); 
+  function submit1() { 
+    IsValed();
+    if(isValed === false) return;
+    var x = document.getElementById("happyAudio"); 
     x.play(); 
     localStorage.removeItem('cart')
-    alert('Thank you')
-    window.location.href = "index.html";
-    window.location.replace("index.html");
-} 
+  } 
+  function changePage() {
+    if(isValed === false) return;
+
+    if (window.confirm('Thank you'))
+    {
+        window.location.href = "../index.html";
+        window.location.replace("../index.html")
+    }
+    else
+    {
+        window.location.href = "../index.html";
+        window.location.replace("../index.html")   
+    }
+  }
   
 function pauseAudio() {
-    var x = document.getElementById("myAudio");
+    var x = document.getElementById("happyAudio");
     x.pause();
+  }
+
+
+  function IsValed(){
+      isValed = true;
+      if (document.getElementById("CustomerIDModal").value === ""||
+       document.getElementById("number").value === "" ||
+       document.getElementById("email").value === '' ||
+       document.getElementById("location").value === '' ||
+       document.getElementById("cardNumber").value===''||
+       document.getElementById("cardExpiry").value === '' ||
+       document.getElementById("cardCVC").value === '' ||
+       document.getElementById("couponCode").value === '' ) {
+        isValed = false;
+        var x = document.getElementById("cryAudio"); 
+        x.play();
+        setTimeout(() => {
+            if (window.confirm('Please fill or of the field')){
+                x.pause();
+            }
+        }, 200);
+      }
+      return isValed
   }

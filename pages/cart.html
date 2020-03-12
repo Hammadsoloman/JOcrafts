@@ -12,16 +12,20 @@
 
 </head>
 <body id=#bodyhide>
-  <audio id="myAudio">
+  <audio id="happyAudio">
       <source src="/audio/yaaay.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
+  <audio id="cryAudio">
+    <source src="/audio/crying.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
   <header class='header1'>
     <div class="logo1"><img src="/images/FINAL (2).png" alt="logo">
     </div>
         <nav class='nav1'>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li ><a href="products.html">Products</a></li>
             <li class="active1"><a  href="cart.html">My Cart</a></li>
             <li><a href="about.html">About us</a></li>
@@ -89,7 +93,7 @@
               autocomplete="cc-csc" required />
             <input type="text" id="couponCode" class="form-control" name="couponCode" placeholder="Enter Coupon Code">
     </fieldset>
-    <input id="submitButton" type="submit" onclick="playAudio()">
+    <input id="submitButton" type="button" onclick="setTimeout(changePage, 200);submit1()" value="Proceed ^_^" >
     <button class='closebtn' onclick="pauseAudio()"><a class='btnclose' href="cart.html">Close</a></button>
   </form>
 </div>
