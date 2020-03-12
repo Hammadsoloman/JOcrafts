@@ -17,7 +17,7 @@
 
 ## Wireframe:
 - Home page wireframe
-![homepage wireframe](/images/home-wireframe.png)
+![homepage wireframe](/docs/images/home-wireframe.png)
 
 ## User Stories:
 
