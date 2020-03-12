@@ -270,6 +270,8 @@ section pre {
   margin-top: 17%;
   /* background-color: tomato; */
   font-size: 150%;
+  font-family: 'Open Sans Condensed', sans-serif;
+
 }
 .priceEl{
   float: right;
@@ -277,6 +279,8 @@ section pre {
   margin-top: 17%;
   /* background-color: tomato; */
   font-size: 150%;
+  font-family: 'Open Sans Condensed', sans-serif;
+
 }
 .Qty{
   float: right;
@@ -284,37 +288,44 @@ section pre {
   margin-top: 17%;
   /* background-color: tomato; */
   font-size: 150%;
+  font-family: 'Open Sans Condensed', sans-serif;
+
 
 }
 .name {
   float: left;
   font-size: 200%;
   color: tomato;
-  margin-left: 12%;
+  margin-left: 5%;
   margin-top: -9%;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 #total{
   float:right;
   margin-right: 20%;
   margin-top: -1%;
   font-size: 130%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+
+
 }
 #submit{
   margin-top: 2%;
   float: right;
   margin-right: -110px;
-}
-#submit {
-  /* position: absolute; */
-  /* top: 70%; */
-  /* right: 0; */
+  font-family: 'Open Sans Condensed', sans-serif;
   background: #f09d51;
   border: none;
   padding: 10px 7px;
   font-weight: bold;
   transition: all 0.3s linear;
   cursor: pointer;
+  font-size: 20px;
+  border-radius: 20px;
+
 }
+
 #submit:hover {
   color: #fff;
 }

@@ -92,7 +92,7 @@ nav{
 nav ul {
   width: 100%;
   padding: 5px 7px 0 0;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
 }
 
 nav ul li{
@@ -100,10 +100,10 @@ nav ul li{
   list-style: none;
   padding: 5px 15px;
   font-family: 'Open Sans Condensed', sans-serif;
-font-weight: lighter;
-letter-spacing: 2px;
-font-size: 18px;
-text-shadow: black;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  font-size: 18px;
+  text-shadow: black;
 }
 
 nav ul li:hover{
