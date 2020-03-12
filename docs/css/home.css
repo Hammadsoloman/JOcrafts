@@ -385,6 +385,9 @@ footer{
     padding: 10px 0;
     /* border: 1px solid white; */
   }
+  .footer-section.links {
+    padding-left: 170px;
+}
   .footer-bottom {
     background: #343a40;
     color: #686868;
@@ -424,7 +427,8 @@ footer{
       font-size: 20px;
       letter-spacing: 3px;
       font-family:'Open Sans Condensed', sans-serif;
-      word-spacing: 5px
+      word-spacing: 5px;
+      margin-right: 70px;
   }
   .newsletter-form {
     float: right;

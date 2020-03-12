@@ -40,7 +40,7 @@ getitem()
 
 function Product (name,price) {
     this.name= name.split(".")[0];
-    this.url= `../images/${name}`;
+    this.url= `/docs/images/${name}`;
     this.price=price;
     this.click=0;
     productObj.push(this);
