@@ -213,6 +213,7 @@ nav ul li a {
 
   .product-center {/*the parent div of the article*/
     margin: 0 auto;
+    margin-left: 9%;
   }
 
   .img-container {/*div for each image*/
