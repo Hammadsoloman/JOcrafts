@@ -158,10 +158,10 @@ nav ul li a {
     padding: 20px 0 0 0;
 }
 .h2img{
-  -webkit-animation: blurFadeInOut 10s ease-in forwards;
-    -moz-animation: blurFadeInOut 10s ease-in forwards;
-    -ms-animation: blurFadeInOut 10s ease-in forwards;
-    animation: blurFadeInOut 10s ease-in forwards;
+  -webkit-animation: blurFadeInOut 5s ease-in forwards;
+    -moz-animation: blurFadeInOut 5s ease-in forwards;
+    -ms-animation: blurFadeInOut 5s ease-in forwards;
+    animation: blurFadeInOut 5s ease-in forwards;
     -webkit-animation-delay: 0s;
     -moz-animation-delay: 0s;
     -ms-animation-delay: 0s;
@@ -220,7 +220,7 @@ nav ul li a {
     overflow: hidden;
     display: inline-block;
     margin: 36px 74px 76px 82px;
-    animation: blurFadeInOut 10s ease-in forwards;
+    animation: blurFadeInOut 5s ease-in forwards;
   }
   p.prod-name {/*the p of each img*/
     white-space: nowrap;

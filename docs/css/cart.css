@@ -21,10 +21,10 @@
     padding: 20px 0 0 0;
 }
 .section-title img{
-  -webkit-animation: blurFadeInOut 10s ease-in forwards;
-  -moz-animation: blurFadeInOut 10s ease-in forwards;
-  -ms-animation: blurFadeInOut 10s ease-in forwards;
-  animation: blurFadeInOut 10s ease-in forwards;
+  -webkit-animation: blurFadeInOut 5s ease-in forwards;
+  -moz-animation: blurFadeInOut 5s ease-in forwards;
+  -ms-animation: blurFadeInOut 5s ease-in forwards;
+  animation: blurFadeInOut 5s ease-in forwards;
   -webkit-animation-delay: 0s;
   -moz-animation-delay: 0s;
   -ms-animation-delay: 0s;
@@ -292,7 +292,7 @@ section pre {
   float: left;
   font-size: 200%;
   color: tomato;
-  margin-left: 33%;
+  margin-left: 48%;
   margin-top: -9%;
   font-family: 'Open Sans Condensed', sans-serif;
 }
@@ -452,11 +452,11 @@ text-shadow: black;
     float: right;
     clear: right;
     margin-top: 15px;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 3px;
-    font-family:'Open Sans Condensed', sans-serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     word-spacing: 5px;
-    margin-right: 70px;
+    margin-right: -2px;
 }
 .newsletter-form {
   float: right;
