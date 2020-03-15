@@ -266,11 +266,11 @@ section pre {
 }
 .totalEl{
   float: right;
-  margin-right: 20% ;
-  margin-top: 17%;
-  /* background-color: tomato; */
-  font-size: 150%;
-  font-family: 'Open Sans Condensed', sans-serif;
+    margin-right: 35%;
+    margin-top: 17%;
+    /* background-color: tomato; */
+    font-size: 165%;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 .priceEl{
   float: right;
@@ -290,11 +290,11 @@ section pre {
 }
 .name {
   float: left;
-  font-size: 200%;
-  color: tomato;
-  margin-left: 48%;
-  margin-top: -9%;
-  font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 255%;
+    color: tomato;
+    margin-left: 30%;
+    margin-top: -15%;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 #total{
   float:right;
