@@ -8,7 +8,6 @@ ulel.setAttribute('class','asdd')
 var total = 0;
 var isValid = true;
 renderlist();
-
 //events/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 articlEl.addEventListener('click', function (event) {
     event.preventDefault();
@@ -17,7 +16,6 @@ articlEl.addEventListener('click', function (event) {
             total -= cart[i].price;
             var totalP = document.getElementById('total')
             totalP.innerHTML = `Total Price: ${total}`
-
             if (cart[i].click > 1) {
                 cart[i].click--;
                 var pQty = document.getElementById(`${cart[i].name} Qty`)
@@ -34,8 +32,6 @@ articlEl.addEventListener('click', function (event) {
     setToCart()
     setTotal()
 })
-
-
 //functions////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 function renderlist() {
     for (var i = 0; i < cart.length; i++) {
@@ -89,8 +85,6 @@ function renderlist() {
     pElAllPrice.innerHTML = `Total Price: ${(total)}`
     pElAllPrice.setAttribute("id", `total`)
 }
-
-
 //set into local storage
 function setToCart() {
     var cartproset = JSON.stringify(cart)
@@ -100,7 +94,6 @@ function setTotal() {
     var totalprices = total
     localStorage.setItem('total', totalprices)
 }
-
 //get from local storage
 function getitem() {
     var cartproget = localStorage.getItem('cart')
@@ -108,12 +101,8 @@ function getitem() {
         cart = JSON.parse(cartproget)
     }
 }
-
-
 // --------------------------------------------------------------
 // ------------------------------popup-------------------
-
-
   function pobUp(){
    var formTotal =document.getElementById('formTotal')
    formTotal.innerHTML = `Total Price: ${total} .JD`
@@ -122,7 +111,6 @@ function getitem() {
    document.querySelector('.products ').style.display = 'none'
    document.querySelector('.footer').style.display = 'none'
   }
-
   function submit1() { 
     IsValed();
     if(isValed === false) return;
@@ -132,7 +120,6 @@ function getitem() {
   }
   function changePage() {
     if(isValed === false) return;
-
     if (window.confirm('Thank you'))
     {
         window.location.href = "index.html";
