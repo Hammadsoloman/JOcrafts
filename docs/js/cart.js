@@ -135,13 +135,13 @@ function getitem() {
 
     if (window.confirm('Thank you'))
     {
-        window.location.href = "../index.html";
-        window.location.replace("../index.html")
+        window.location.href = "index.html";
+        window.location.replace("index.html")
     }
     else
     {
-        window.location.href = "../index.html";
-        window.location.replace("../index.html")   
+        window.location.href = "index.html";
+        window.location.replace("index.html")   
     }
   }
 function pauseAudio() {

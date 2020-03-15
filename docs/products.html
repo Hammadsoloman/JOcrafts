@@ -41,8 +41,12 @@
             </article>
         </div>
     </section>
-    
+    <section class="statChart">
+        <button type="button" onclick="renderChart()" id="renderChart">View Stats For Most Selected Products</button>
+        <canvas id="chart" width="50" height="50"></canvas>
+    </section>
     <script src="js/products.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 </body>
 <footer>
         <div class="footer-content">

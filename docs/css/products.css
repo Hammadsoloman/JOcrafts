@@ -282,6 +282,13 @@ nav ul li a {
     margin-left: 3%;
     opacity: 85%;
   }
+  #chart{
+    display: block;
+    height: 500px;
+    width: 500px;
+    margin-left: 5%;
+    margin-bottom: 10%;
+  }
   .footer-content{
     /* border: 1px solid red; */
     height: 200px;

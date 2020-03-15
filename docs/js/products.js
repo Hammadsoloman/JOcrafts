@@ -37,7 +37,8 @@ var productObj =[];
 var cart =[];
 var articlEl = document.querySelector('.product');
 getitem()
-
+var productsNames = [];
+var productsClickes = [];
 function Product (name,price) {
     this.name= name.split(".")[0];
     this.url= `images/${name}`;
@@ -108,8 +109,8 @@ pel.setAttribute('class','cartCounter');
         console.log(Number(event.target.id))
         console.log(event.target)
         productObj[Number(event.target.id)].click++
-        setItem()
-        pel.textContent=cart.length
+        setItem();
+        pel.textContent=cart.length;
     }
  })
  
@@ -124,3 +125,37 @@ function getitem(){
       cart= JSON.parse(cartproget)
     }
 }
+//chart function
+function renderChart(){
+    // var productsNames = [];
+    // var productsClickes = [];
+    for (var m = 0; m < productObj.length; m++){
+        var productName = productObj[m].name;
+        productsNames.push(productName);
+        var productClick = productObj[m].click;
+        productsClickes.push(productClick);
+    }
+    var ctx = document.getElementById('chart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: productsNames,
+          datasets: [{
+            label: '# of quantities added to cart',
+            data: productsClickes,
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderColor: 'rgba(255, 99, 132, 1)',
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: true
+              }
+            }]
+          }
+        }
+      });
+    }
